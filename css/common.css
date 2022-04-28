@@ -212,6 +212,8 @@ section:hover .sec-title::after{
 }
 
 .header-logo{
+	max-width: 300px;
+	width: 100%;
 	margin-left: 5px;
 }
 .navbar-light .navbar-nav.secondary-header .nav-link {
