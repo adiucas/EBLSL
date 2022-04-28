@@ -1,0 +1,17 @@
+@media (max-width: 768px){
+	/*header*/
+	.navbar{
+		padding-top: 3px;
+		padding-bottom: 3px;
+	}
+	.dse-sky{
+		flex-direction: row;
+	}
+}
+@media (max-width: 576px){
+	/* header */
+	.header-logo{
+		max-width: 200px;
+		margin-left: 0;
+	}
+}

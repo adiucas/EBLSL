@@ -1,0 +1,241 @@
+/*==============================
+=            banner            =
+==============================*/
+.carousel-indicators{
+	display: none;
+}
+
+.carousel-caption {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+	 right: unset; 
+	background: #1f438db0;
+	 bottom: unset; 
+	z-index: 10;
+	padding: 30px;
+	color: #fff;
+	text-align: left;
+	max-width: 480px;
+}
+.carousel-item{
+	height: calc(100vh - 162px);
+	position: relative;
+}
+.carousel-item img{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	max-width: 2000px
+}
+.carousel{
+	background: url(../images/banner%20bg.svg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+/*=====  End of banner  ======*/
+
+/*====================================
+=            our services            =
+====================================*/
+
+.os-section{
+	text-align: center;
+}
+.os-card-learn-more{
+	border: 2px solid transparent;
+	padding: 15px;
+	border-radius: 15px;
+	overflow: hidden;
+	transition: 0.3s all;
+}
+.lm-text{
+	background: transparent;
+	color: #ffffff;
+	margin: 5px -17px -17px -17px;
+	text-transform: uppercase;
+	transition: 0.3s all;
+	padding: 5px 0;
+}
+.os-card:hover .os-card-learn-more{
+	border: 2px solid var(--blue);
+}
+.os-card:hover .lm-text{
+	background: var(--blue);
+}
+.os-card-learn-more p{
+	width: 140px;
+	margin: 5px auto 0;
+	line-height: 1.2;
+}
+.os-card{
+	transition: 0.3s all;
+}
+.os-card:hover{
+	transform: scale(1.1);
+}
+/*=====  End of our services  ======*/
+
+/*======================================
+=            why choose ebl            =
+======================================*/
+.why-choose-us{
+	text-align: center;
+	background: #eeeeee80;
+}
+/*=====  End of why choose ebl  ======*/
+
+/*=====================================
+=            discover more            =
+=====================================*/
+
+.discover-more{
+	text-align: center;
+}
+.dis-card svg{
+	font-size: 30px;
+	color: #ffffff;
+	width: 30px;
+	fill: #ffffff;
+}
+.dis-card .icon{
+	background: var(--yellow);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	transition: 0.3s all;
+}
+.dis-card{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	transition: 0.3s all;
+}
+.dis-card-border{
+	padding: 5px;
+	border-radius: 50%;
+	border: 2px solid transparent;
+	transition: 0.3s all;
+
+}
+.dis-card:hover .icon{
+	background: var(--blue);
+}
+.dis-card:hover .dis-card-border{
+	padding: 5px;
+	border-radius: 50%;
+	border: 2px solid var(--blue);
+}
+.dis-card:hover{
+	transform: scale(1.1);
+}
+.dis-card a{
+	font-family: "Poppins",sans-serif;
+}
+/*=====  End of discover more  ======*/
+
+
+/*================================
+=            research            =
+================================*/
+
+.research{
+	background: url('../images/research-bg.svg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.research .title-tag{
+	display: flex;
+	flex-direction: column;
+	color: #ffffff;
+}
+
+.research .title-tag p{
+	    font-size: 25px;
+	    width: calc(100% - 100px);
+}
+
+.rnd-cards, .rnd-cards img{
+	height: 300px;
+}
+.rnd-cards img{
+	box-shadow: 0 3px 3px #00000073;
+}
+
+
+/*=====  End of research  ======*/
+
+
+/*========================================
+=            connect with us            =
+========================================*/
+
+.connect-with-us{
+	position: relative;
+}
+
+.connect-with-us .box{
+	padding: 45px 15px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	z-index: 1;
+	text-align: center;
+	background: #5B9BD5;
+	color: #ffffff;
+}
+
+.connect-with-us .box .dash{
+	width: 100%;
+	height: 5px;
+	background: #ffffff;
+}
+
+.connect-with-us .left{
+	background: url('../images/cwu-bg.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-top: 25%;
+}
+
+.connect-with-us .right{
+	background-color: #FFC000;
+	position: relative;
+	padding: 15px;
+}
+
+.connect-with-us .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #000000;
+    background-color: #FFD966;
+}
+
+.connect-with-us .nav-link{
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.cwu-data{
+	margin-top: 50px;
+	margin-left: 100px;
+}
+
+.cwu-data .title{
+	font-weight: bold;
+}
+.ho-map{
+	max-height: 450px;
+}
+/*=====  End of connect with us  ======*/

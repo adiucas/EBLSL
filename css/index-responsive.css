@@ -1,0 +1,57 @@
+@media (max-width: 768px){
+	.research .title-tag {
+	     position: unset; 
+	     top: unset; 
+	     transform: unset; 
+	}
+	.rnd-cards, .rnd-cards img {
+	     height: unset; 
+	}
+	.rnd-cards{
+		margin: 15px 0;
+	}
+	.connect-with-us{
+		display: flex;
+		justify-content: center;
+	}
+	.connect-with-us .box {
+	    top: 0;
+	    left: unset;
+	    transform: scale(0.6) translateY(-34%);
+	}
+	.cwu-data{
+		margin-top: unset;
+		margin-left: unset;
+	}
+	.connect-with-us .left {
+	    background-size: cover;
+	    min-height: 200px;
+	}
+	.nav {
+	    justify-content: center;
+	}
+	.data-scroller{
+		font-size: 12px;
+	}
+	.dis-card:not(:last-child){
+		margin-bottom: 15px;
+	}
+	.research .title-tag {
+	    align-items: center;
+	    margin-bottom: 15px;
+	    text-align: center;
+	}
+}
+
+@media (max-width: 1200px){
+	#eblslHome .nav-link{
+		font-size: 14px;
+		font-weight: bold;
+	}
+}
+
+@media (min-width: 1920px){
+	.carousel-item img{
+		max-width: 100%
+	}
+}
