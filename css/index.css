@@ -1,42 +1,73 @@
 /*==============================
 =            banner            =
 ==============================*/
-.carousel-indicators{
+#mainBanner .carousel-indicators{
 	display: none;
 }
 
-.carousel-caption {
+#mainBanner .carousel-caption {
+	bottom: unset;
 	position: absolute;
+	right: 15%;
 	top: 50%;
-	left: 0;
 	transform: translateY(-50%);
-	 right: unset; 
-	background: #1f438db0;
-	 bottom: unset; 
+	left: 15%;
 	z-index: 10;
-	padding: 30px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 	color: #fff;
 	text-align: left;
-	max-width: 480px;
 }
-.carousel-item{
-	height: calc(100vh - 162px);
+#mainBanner .carousel-item{
+	height: calc(100vh - 133px);
 	position: relative;
 }
-.carousel-item img{
+#mainBanner .carousel-item img{
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	max-width: 2000px
 }
-.carousel{
-	background: url(../images/banner%20bg.svg);
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
-	padding-top: 20px;
-	padding-bottom: 20px;
+#mainBanner .carousel-overlay{
+	background: var(--blue);
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	opacity: 0.8;
+}
+#mainBanner .floating-menu-left{
+	position: absolute;
+	top: 50%;
+	left: 0;
+	text-transform: uppercase;
+	z-index: 2;
+	display: flex;
+	transform: rotate(-90deg) translateX(-50%);
+	transform-origin: top left;
+}
+#mainBanner .floating-menu-right{
+	position: absolute;
+	top: 50%;
+	right: 0;
+	text-transform: uppercase;
+	z-index: 2;
+	display: flex;
+	transform: rotate(90deg) translateX(50%);
+	transform-origin: top right;
+}
+#mainBanner .menu{
+	background: var(--blue);
+	color: #ffffff;
+	padding: 5px 10px;
+	border-right: 2px solid var(--green);
+	border-left: 2px solid var(--green);
+}
+.menu i, .menu svg{
+	transform: rotate(270deg);
 }
 /*=====  End of banner  ======*/
 
@@ -69,15 +100,18 @@
 	background: var(--blue);
 }
 .os-card-learn-more p{
-	width: 140px;
 	margin: 5px auto 0;
 	line-height: 1.2;
 }
 .os-card{
 	transition: 0.3s all;
+	font-size: 14px;
 }
 .os-card:hover{
 	transform: scale(1.1);
+}
+.os-card img{
+	border-radius: 15px;
 }
 /*=====  End of our services  ======*/
 
@@ -85,63 +119,12 @@
 =            why choose ebl            =
 ======================================*/
 .why-choose-us{
-	text-align: center;
 	background: #eeeeee80;
 }
+.why-choose-us h1{
+	color: var(--blue);
+}
 /*=====  End of why choose ebl  ======*/
-
-/*=====================================
-=            discover more            =
-=====================================*/
-
-.discover-more{
-	text-align: center;
-}
-.dis-card svg{
-	font-size: 30px;
-	color: #ffffff;
-	width: 30px;
-	fill: #ffffff;
-}
-.dis-card .icon{
-	background: var(--yellow);
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 100px;
-	height: 100px;
-	border-radius: 50%;
-	transition: 0.3s all;
-}
-.dis-card{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	transition: 0.3s all;
-}
-.dis-card-border{
-	padding: 5px;
-	border-radius: 50%;
-	border: 2px solid transparent;
-	transition: 0.3s all;
-
-}
-.dis-card:hover .icon{
-	background: var(--blue);
-}
-.dis-card:hover .dis-card-border{
-	padding: 5px;
-	border-radius: 50%;
-	border: 2px solid var(--blue);
-}
-.dis-card:hover{
-	transform: scale(1.1);
-}
-.dis-card a{
-	font-family: "Poppins",sans-serif;
-}
-/*=====  End of discover more  ======*/
 
 
 /*================================
@@ -161,18 +144,30 @@
 	color: #ffffff;
 }
 
+.research .title-tag{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;
+}
+.title-tag h1{
+	color: grey;
+}
+.title-tag p{
+	color: #222222;
+}
 .research .title-tag p{
-	    font-size: 25px;
+	    font-size: 14px;
 	    width: calc(100% - 100px);
 }
 
-.rnd-cards, .rnd-cards img{
-	height: 300px;
+#rnd-caro img{
+	width: 100%;
+	height: 250px;
 }
-.rnd-cards img{
-	box-shadow: 0 3px 3px #00000073;
+#rnd-caro h5{
+	text-align: center;
 }
-
 
 /*=====  End of research  ======*/
 

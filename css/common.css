@@ -41,6 +41,10 @@
 	padding: 0;
 }
 
+body{
+	overflow-x: hidden;
+}
+
 a, a:hover, a:focus {
 	text-decoration: none;
 	color: unset;
@@ -174,19 +178,19 @@ section:hover .sec-title::after{
 }
 .btn-primary:hover {
     color: #fff;
-    background-color: #125c2e;
-    border-color: #125c2e;
+    background-color: #0e713a;
+    border-color: #0e713a;
 }
 .btn-primary.focus, .btn-primary:focus {
 	color: #fff;
-	background-color: #125c2e;
-	border-color: #167439;
+	background-color: #0e713a;
+	border-color: var(--green);
 	box-shadow: 0 0 0 0.2rem rgb(22 116 57 / 50%);
 }
 .btn-primary:not(:disabled):not(.disabled):active{
 	color: #fff;
-	background-color: #125c2e;
-	border-color: #167439;
+	background-color: #0e713a;
+	border-color: var(--green);
 	box-shadow: 0 0 0 0.2rem rgb(22 116 57 / 50%);
 }
 .btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus{
@@ -229,22 +233,66 @@ section:hover .sec-title::after{
 	color: #ffffff;
 }
 .dse-trading{
-	width: 50px;
+	width: 40px;
 }
-.sky-trading{
+.dse-mobile a{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	transition: 0.3s all;
+}
+.dse-mobile span{
+	font-size: 14px;
+}
+.dse-mobile:hover .nav-link{
+	transform: scale(1.1);
+}
+.eblsl-app{
 	display: flex;
 	align-items: center;
-	transition: 0.3s linear;
+	transition: 0.3s all;
 }
-.sky-trading:hover{
-	transform: scale(1.2);
+.eblsl-app a{
+	background: var(--blue);
+	font-size: 11px;
+	text-align: center;
+	color: #ffffff !important;
+	border-radius: 5px;
+	transition: 0.3s all;
+	font-weight: bold;
+	padding: 10px;
 }
-.sky-trading img{
-	margin-left: 10px;
-	max-width: 60px;
-	width: 100%;
+.eblsl-app:hover{
+	transform: scale(1.1);
 }
 
+.eblsl-app:hover a{
+	    box-shadow: 0 5px 10px 0px #0000002e;
+}
+.investor-login{
+	display: flex;
+	align-items: center;
+	transition: 0.3s all;
+}
+.investor-login a{
+	background: var(--yellow);
+	font-size: 11px;
+	text-align: center;
+	color: #ffffff !important;
+	border-radius: 5px;
+	font-weight: bold;
+	transition: 0.3s all;
+}
+.investor-login:hover{
+	transform: scale(1.1);
+}
+.investor-login:hover a{
+	        box-shadow: 0 5px 10px 0px #0000002e;
+}
+.eblsl-app .nav-link, .investor-login .nav-link  {
+    padding-right: 10px;
+    padding-left: 10px;
+}
 /*=====  End of header  ======*/
 
 

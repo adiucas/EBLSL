@@ -27,3 +27,7 @@ function includeHTML() {
 }
 
 $('.first-option').hide();
+
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})

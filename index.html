@@ -16,6 +16,7 @@
 	<link rel="stylesheet" href="css/index.css">
 	<link rel="stylesheet" href="css/index-responsive.css">
 	<!-- scripts -->
+	<script src="js/jquery-3.6.0.min.js"></script>
 	<script src="js/main.js"></script>
 </head>
 <body id="eblslHome">
@@ -28,72 +29,151 @@
 	<!--============================
 	=            banner            =
 	=============================-->
-	<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+	<div id="mainBanner" class="carousel slide" data-ride="carousel">
 	  <ol class="carousel-indicators">
-	    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-	    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-	    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+	    <li data-target="#mainBanner" data-slide-to="0" class="active"></li>
+	    <li data-target="#mainBanner" data-slide-to="1"></li>
+	    <li data-target="#mainBanner" data-slide-to="2"></li>
 	  </ol>
 	  <div class="carousel-inner">
+	  	<!-- <div class="carousel-overlay"></div> -->
 	    <div class="carousel-item active">
-	      <img src="images/banner2.jpg" class="d-block" alt="...">
+	      <img src="images/banner1.jpg" class="d-block" alt="...">
 	      <div class="carousel-caption d-md-block">
 	        <h2>
+	        	Investing made easy 
+	        </h2>
+	        <p>
 	        	Unleashing a world of
 	        	privileges with premium
 	        	stock brokerage services
-	        </h2>
+	        </p>
+	        <button class="btn btn-primary mt-4" onclick="location.href='#';" target>Learn More...</button>
 	      </div>
+	    </div>
+	    <div class="floating-menu-left">
+	    	<a href="">
+	    		<div class="menu">
+	    			what's new
+	    		</div>
+	    	</a>
+	    	<a href="">
+	    		<div class="menu">
+	    			ebl self service
+	    		</div>
+	    	</a>
+	    </div>
+	    <div class="floating-menu-right">
+	    	<a href="">
+	    		<div class="menu">
+	    			apply now
+	    		</div>
+	    	</a>
+	    	<a href="" data-toggle="tooltip" data-placement="left" title="Call Us">
+	    		<div class="menu">
+	    			<i class="fa-solid fa-phone"></i>
+	    		</div>
+	    	</a>
+	    	<a href="" data-toggle="tooltip" data-placement="left" title="Find Us">
+	    		<div class="menu">
+	    			<i class="fa-solid fa-location-dot"></i>
+	    		</div>
+	    	</a>
+	    	<a href="">
+	    		<div class="menu" data-toggle="tooltip" data-placement="left" title="BO Deposit">
+	    			<i class="fa-solid fa-sack-dollar"></i>
+	    		</div>
+	    	</a>
+	    	<a href="">
+	    		<div class="menu" data-toggle="tooltip" data-placement="left" title="Financial Goal Calculator">
+	    			<i class="fa-solid fa-calculator"></i>
+	    		</div>
+	    	</a>
+	    	<a href="" data-toggle="tooltip" data-placement="left" title="Need Help ?">
+	    		<div class="menu">
+	    			<i class="fa-solid fa-circle-question"></i>
+	    		</div>
+	    	</a>
 	    </div>
 	  </div>
 	</div>
 	<!--==================================
 	=            our services            =
 	===================================-->
-	<section class="os-section pt30 pb15 container">
-		<div class="sec-title pb30">
-			<h3>our services</h3>
-		</div>
+	<section class="os-section pt30 pb15 container-fluid">
 		<div class="row">
-			<div class="col-lg-3 col-md-6 col-sm-6  os-card">
+			<div class="col-lg-3 col-md-4 col-sm-6  os-card">
 				<div class="os-card-wrapper">
 					<a href="">
 						<div class="os-card-learn-more">
-							<img src="images/s1.png" class="img-fluid">
-							<p>Retail Brokerage Service</p>
+							<img src="images/services/s1.png" class="img-fluid">
+							<p>Retail Brokerage <br> Service</p>
 							<div class="lm-text">learn more</div>
 						</div>
 					</a>
 				</div>
 			</div>
-			<div class="col-lg-3 col-md-6 col-sm-6 os-card">
+			<div class="col-lg-3 col-md-4 col-sm-6 os-card">
 				<div class="os-card-wrapper">
 					<a href="">
 						<div class="os-card-learn-more">
-							<img src="images/s2.png" class="img-fluid">
-							<p>Institutions & HNIs</p>
+							<img src="images/services/s2.png" class="img-fluid">
+							<p>Corporate <br> & HNIs</p>
 							<div class="lm-text">learn more</div>
 						</div>
 					</a>
 				</div>
 			</div>
-			<div class="col-lg-3 col-md-6 col-sm-6 os-card">
+			<div class="col-lg-3 col-md-4 col-sm-6 os-card">
 				<div class="os-card-wrapper">
 					<a href="">
 						<div class="os-card-learn-more">
-							<img src="images/s3.png" class="img-fluid">
+							<img src="images/services/s3.png" class="img-fluid">
 							<p>Foreign <br> & NRB</p>
 							<div class="lm-text">learn more</div>
 						</div>
 					</a>
 				</div>
 			</div>
-			<div class="col-lg-3 col-md-6 col-sm-6 os-card">
+			<div class="col-lg-3 col-md-4 col-sm-6 os-card">
 				<div class="os-card-wrapper">
 					<a href="">
 						<div class="os-card-learn-more">
-							<img src="images/s4.png" class="img-fluid">
-							<p>IPO <br> Subscription</p>
+							<img src="images/services/s4.png" class="img-fluid">
+							<p>Margin <br> Loan</p>
+							<div class="lm-text">learn more</div>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 os-card">
+				<div class="os-card-wrapper">
+					<a href="">
+						<div class="os-card-learn-more">
+							<img src="images/services/s5.png" class="img-fluid">
+							<p>VIP Trading <br> Booth</p>
+							<div class="lm-text">learn more</div>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 os-card">
+				<div class="os-card-wrapper">
+					<a href="">
+						<div class="os-card-learn-more">
+							<img src="images/services/s6.png" class="img-fluid">
+							<p>Dedicated <br> RM</p>
+							<div class="lm-text">learn more</div>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 offset-md-4 offset-lg-0 col-sm-6 os-card">
+				<div class="os-card-wrapper">
+					<a href="">
+						<div class="os-card-learn-more">
+							<img src="images/services/s7.png" class="img-fluid">
+							<p>Digital <br> Services</p>
 							<div class="lm-text">learn more</div>
 						</div>
 					</a>
@@ -107,62 +187,14 @@
 	<section class="why-choose-us container-fluid ptb30">
 		<div class="row">
 			<div class="container">
-				<div class="sec-title pb30">
-					<h3>why choose us</h3>
+				<div class="row">
+					<div class="col-lg-6 align-self-center">
+						<h1 class="text-lg-left text-md-center text-center">Discover a World of Opportunities</h1>
+					</div>
+					<div class="col-lg-6 align-self-center">
+						<img src="images/discover-world.svg" alt="">
+					</div>
 				</div>
-				<div>
-					<img src="images/wcu.svg" class="img-fluid">
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--===================================
-	=            discover more            =
-	====================================-->
-	<section class="discover-more ptb30 container">
-		<div class="sec-title">
-			<h3>discover more</h3>
-		</div>
-		<div class="row pt30">
-			<div class="col-lg-3 dis-card">
-				<a href="">
-					<div class="dis-card-border">
-						<div class="icon">
-							<i class="fa-solid fa-desktop"></i>
-						</div>
-					</div>
-				</a>
-				<a href="" class="mt-1">Research Portal</a>
-			</div>
-			<div class="col-lg-3 dis-card">
-				<a href="">
-					<div class="dis-card-border">
-						<div class="icon">
-							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224 256C259.346 256 288 227.344 288 192S259.346 128 224 128S160 156.656 160 192S188.654 256 224 256ZM400 32H48C21.6 32 0 53.602 0 80V432C0 458.398 21.6 480 48 480H400C426.4 480 448 458.398 448 432V80C448 53.602 426.4 32 400 32ZM384 352H336V352C336 316.654 307.346 288 272 288H176C140.654 288 112 316.654 112 352V352H64V96H384V352Z"/></svg>
-						</div>
-					</div>
-				</a>
-				<a href="" class="mt-1">Self Service</a>
-			</div>
-			<div class="col-lg-3 dis-card">
-				<a href="">
-					<div class="dis-card-border">
-						<div class="icon">
-							<i class="fa-solid fa-money-bill-trend-up"></i>
-						</div>
-					</div>
-				</a>
-				<a href="" class="mt-1">Foreign Trade</a>
-			</div>
-			<div class="col-lg-3 dis-card">
-				<a href="">
-					<div class="dis-card-border">
-						<div class="icon">
-							<i class="fa-solid fa-arrow-up-right-dots"></i>
-						</div>
-					</div>
-				</a>
-				<a href="" class="mt-1">Career at EBLSL</a>
 			</div>
 		</div>
 	</section>
@@ -171,32 +203,58 @@
 	=            r & d            =
 	============================-->
 	<section class="research ptb30">
-		<div class="overlay"></div>
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-5 col-12 text-sm-center text-lg-left">
 				  	<div class="title-tag">
-				  		<h1>Latest <br> Research</h1>
-				  		<p class="mt15">EBLSL’ state of the art research wing helps you make informed decision.</p>
+				  		<h1>Latest <br> Research <br> Publications</h1>
+				  		<p class="mt15">EBLSL’ state of the art research wing <br> helps you make informed decision.</p>
 				  	</div>
 				</div>
 				<div class="col-lg-7 col-12">
-					<div class="row">
-						<div class="col-lg-4 col-12 text-center mb-4">
-							<div class="rnd-cards">
-								<a href="javascript:void(0);"><img src="images/r1.jpg" class="img-fluid" alt=""></a>
-							</div>
-						</div>
-						<div class="col-lg-4 col-12 text-center mb-4">
-							<div class="rnd-cards">
-								<a href="javascript:void(0);"><img src="images/r2.jpg" class="img-fluid" alt=""></a>
-							</div>
-						</div>
-						<div class="col-lg-4 col-12 text-center mb-4">
-							<div class="rnd-cards">
-								<a href="javascript:void(0);"><img src="images/r3.jpg" class="img-fluid" alt=""></a>
-							</div>
-						</div>
+					<div id="rnd-caro" class="carousel slide" data-ride="carousel">
+					  <div class="carousel-inner">
+					  	<div class="carousel-item active">
+					  		<div class="row">
+					  			<div class="col-lg-4 d-flex flex-column">
+					  			  	<img src="images/r1.jpg">
+					  			  	<h5 class="mt-2">Bangladesh <br> Market Update <br> 2022</h5>
+					  			</div>
+					  			<div class="col-lg-4 d-flex flex-column">
+					  			  	<img src="images/r2.jpg">
+					  			  	<h5 class="mt-2">Bangladesh <br> Market Update <br> 2022</h5>
+					  			</div>
+					  			<div class="col-lg-4 d-flex flex-column">
+					  			  	<img src="images/r3.jpg">
+					  			  	<h5 class="mt-2">Bangladesh <br> Market Update <br> 2022</h5>
+					  			</div>
+					  		</div>
+					  	</div>
+					  	<div class="carousel-item">
+					  		<div class="row">
+					  			<div class="col-lg-4 d-flex flex-column">
+					  			  	<img src="images/r1.jpg">
+					  			  	<h5 class="mt-2">Bangladesh <br> Market Update <br> 2022</h5>
+					  			</div>
+					  			<div class="col-lg-4 d-flex flex-column">
+					  			  	<img src="images/r2.jpg">
+					  			  	<h5 class="mt-2">Bangladesh <br> Market Update <br> 2022</h5>
+					  			</div>
+					  			<div class="col-lg-4 d-flex flex-column">
+					  			  	<img src="images/r3.jpg">
+					  			  	<h5 class="mt-2">Bangladesh <br> Market Update <br> 2022</h5>
+					  			</div>
+					  		</div>
+					  	</div>
+					  </div>
+					  <a class="carousel-control-prev" href="#rnd-caro" role="button" data-slide="prev">
+					    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					    <span class="sr-only">Previous</span>
+					  </a>
+					  <a class="carousel-control-next" href="#rnd-caro" role="button" data-slide="next">
+					    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+					    <span class="sr-only">Next</span>
+					  </a>
 					</div>
 				</div>
 			</div>
@@ -212,7 +270,6 @@
 <script>
 	includeHTML();
 </script>
-<script src="js/jquery-3.6.0.min.js"></script>
 <script src="js/index.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js" crossorigin="anonymous"></script>
 <script src="js/popper.min.js"></script>
