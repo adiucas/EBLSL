@@ -41,6 +41,12 @@
 	    margin-bottom: 15px;
 	    text-align: center;
 	}
+	.title-tag h1{
+		color: #ffffff;
+	}
+	.research{
+		background: var(--yellow);
+	}
 }
 
 @media (max-width: 1200px){

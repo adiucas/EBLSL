@@ -7,6 +7,9 @@
 	.dse-sky{
 		flex-direction: row;
 	}
+	.foo-logo{
+		max-width: 300px;
+	}
 }
 @media (max-width: 576px){
 	/* header */

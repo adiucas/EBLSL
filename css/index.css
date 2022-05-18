@@ -69,6 +69,7 @@
 .menu i, .menu svg{
 	transform: rotate(270deg);
 }
+
 /*=====  End of banner  ======*/
 
 /*====================================
@@ -136,6 +137,7 @@
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
+	padding-bottom: 80px;
 }
 
 .research .title-tag{
@@ -161,14 +163,76 @@
 	    width: calc(100% - 100px);
 }
 
-#rnd-caro img{
+#rnd-caro.desktop img{
 	width: 100%;
 	height: 250px;
 }
-#rnd-caro h5{
+#rnd-caro h5, #rnd-caro-mobile h5{
 	text-align: center;
 }
 
+#rnd-caro.desktop .carousel-control-next, #rnd-caro.desktop .carousel-control-prev{
+    position: absolute;
+    top: unset;
+    bottom: -60px;
+    z-index: 1;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: unset;
+    color: #fff;
+    text-align: center;
+    opacity: 1;
+    transition: opacity .15s ease;
+    background: var(--blue);
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+
+#rnd-caro.desktop .carousel-control-next{
+	right: 35%;
+}
+#rnd-caro.desktop .carousel-control-prev{
+	left: 35%;
+}
+
+#rnd-caro-mobile img{
+	width: 100%;
+	max-width: 200px;
+	height: 250px;
+}
+#rnd-caro-mobile .carousel-control-next, #rnd-caro-mobile .carousel-control-prev{
+    position: absolute;
+    top: unset;
+    bottom: -60px;
+    z-index: 1;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: unset;
+    color: #fff;
+    text-align: center;
+    opacity: 1;
+    transition: opacity .15s ease;
+    background: var(--blue);
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+#rnd-caro-mobile .carousel-control-next{
+	right: 35%;
+}
+#rnd-caro-mobile .carousel-control-prev{
+	left: 35%;
+}
+#rnd-caro-mobile .carousel-item{
+	text-align: center;
+}
 /*=====  End of research  ======*/
 
 
@@ -230,7 +294,17 @@
 .cwu-data .title{
 	font-weight: bold;
 }
-.ho-map{
-	max-height: 450px;
-}
 /*=====  End of connect with us  ======*/
+
+/*===========================
+=            map            =
+===========================*/
+.ho-map{
+	line-height: 0;
+}
+.ho-map iframe{
+	width: 100%;
+	height: 300px;
+}
+
+/*=====  End of map  ======*/
