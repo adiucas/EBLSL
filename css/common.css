@@ -293,6 +293,12 @@ section:hover .sec-title::after{
     padding-right: 10px;
     padding-left: 10px;
 }
+.other-menu-bar{
+	background: gray;
+	width: 2px;
+	height: 70%;
+	margin: 0 15px;
+}
 /*=====  End of header  ======*/
 
 
