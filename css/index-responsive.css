@@ -47,6 +47,9 @@
 	.research{
 		background: var(--yellow);
 	}
+	.floating-menu-left, .floating-menu-right{
+		display: none !important;
+	}
 }
 
 @media (max-width: 1200px){
@@ -55,7 +58,9 @@
 		font-weight: bold;
 	}
 }
+@media (min-width: 1200px){
 
+}
 @media (min-width: 1920px){
 	.carousel-item img{
 		max-width: 100%
