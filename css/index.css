@@ -27,7 +27,8 @@
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	max-width: 2000px
+	max-width: 2000px;
+	min-height: 400px;
 }
 #mainBanner .carousel-overlay{
 	background: var(--blue);
