@@ -62,7 +62,7 @@
 
 }
 @media (min-width: 1920px){
-	.carousel-item img{
+	#mainBanner .carousel-item img{
 		max-width: 100%
 	}
 }
