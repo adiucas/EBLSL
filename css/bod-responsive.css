@@ -1,0 +1,30 @@
+@media (max-width: 1200px){
+	.bod-members-mobile{
+		display: block;
+	}
+	.bod-members-mobile .message.right{
+		text-align-last: unset;
+	}
+}
+@media (min-width: 1200px){
+	.bod-members{
+		display: block;
+	}
+}
+@media (max-width: 768px){
+	.bod-members-mobile .photo{
+		text-align: center;
+	}
+	.bod-members-mobile .photo img{
+		width: 200px;
+	}
+}
+@media (max-width: 992px){
+	.banner img{
+		width: unset;
+		top: 0; 
+		left: 0;
+		transform: unset;
+		height: 100%;
+	}
+}
