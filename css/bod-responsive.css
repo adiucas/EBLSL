@@ -11,14 +11,6 @@
 		display: block;
 	}
 }
-@media (max-width: 768px){
-	.bod-members-mobile .photo{
-		text-align: center;
-	}
-	.bod-members-mobile .photo img{
-		width: 200px;
-	}
-}
 @media (max-width: 992px){
 	.banner img{
 		width: unset;
@@ -27,4 +19,13 @@
 		transform: unset;
 		height: 100%;
 	}
+	.bod-members-mobile .photo{
+		text-align: center;
+	}
+	.bod-members-mobile .photo img{
+		width: 200px;
+	}
+}
+@media (max-width: 768px){
+	
 }
