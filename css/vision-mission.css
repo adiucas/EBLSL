@@ -1,0 +1,43 @@
+/*banner*/
+.banner{
+	width: 100%;
+	height: calc(100vh - 100px);
+	position: relative;
+	overflow: hidden;
+}
+
+.banner img{
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.banner-title{
+	position: absolute;
+	z-index: 1;
+	background: #1f438dc2;
+	padding: 30px 60px;
+	color: #ffffff;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.sec-desc{
+	text-align: justify;
+	text-align-last: left;
+	padding: 0px 30px 30px 30px;
+}
+.mission-points{
+	list-style: none;
+}
+.mission-points li{
+	display: flex;
+}
+.mission-points li:before{
+	content: '\f14a';
+	font-family: 'Font Awesome 6 Free';
+	font-weight: bold;
+	margin-right: 10px;
+	color: var(--blue);
+}
