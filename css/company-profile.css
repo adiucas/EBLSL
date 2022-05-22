@@ -23,24 +23,7 @@
 	top: 50%;
 	transform: translateY(-50%);
 }
-.sec-desc{
-	text-align: justify;
-	text-align-last: left;
-	padding: 0px 30px 30px 30px;
-}
-.mission-points{
-	list-style: none;
-}
-.mission-points li{
-	display: flex;
-}
-.mission-points li:before{
-	content: '\f14a';
-	font-family: 'Font Awesome 6 Free';
-	font-weight: bold;
-	margin-right: 10px;
-	color: var(--blue);
-}
+
 .bg-light{
 	background: rgb(248 249 250 / 90%)!important;
 }
