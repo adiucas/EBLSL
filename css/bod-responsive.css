@@ -1,4 +1,4 @@
-@media (max-width: 1200px){
+@media (max-width: 1300px){
 	.bod-members-mobile{
 		display: block;
 	}
@@ -6,7 +6,7 @@
 		text-align-last: unset;
 	}
 }
-@media (min-width: 1200px){
+@media (min-width: 1300px){
 	.bod-members{
 		display: block;
 	}
@@ -25,7 +25,4 @@
 	.bod-members-mobile .photo img{
 		width: 200px;
 	}
-}
-@media (max-width: 768px){
-	
 }

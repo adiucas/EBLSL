@@ -43,9 +43,10 @@
 }
 .bod-member-photo{
 	width: 180px;
-	border: 2px solid transparent;
+	height: 210px;
 	overflow: hidden;
 	padding-top: 15px;
+	border: 2px solid rgb(0 0 0 / 10%);
 }
 .nav-link.active .bod-member-photo{
 	border: 2px solid var(--blue);
