@@ -98,3 +98,14 @@
 .bod-members-mobile .message.right{
 	text-align-last: right;
 }
+
+/*management committee*/
+
+#manCom .bod-member-name{
+    width: 200px;
+}
+
+#manCom .bod-member-photo{
+	width: 200px;
+	height: 250px;
+}
