@@ -1,0 +1,62 @@
+.carousel-inner{
+     border: 1px solid rgb(128 128 128 / 25%);
+}
+
+.service-tab{
+    background: var(--blue);
+    color: #ffffff;
+    font-family: "Poppins", sans-serif;
+    padding: 10px 15px;
+}
+
+.nav-tabs .nav-link {
+    border: unset;
+}
+
+.nav-link.active::after{
+    content: "";
+    border-bottom: 3px solid var(--green);
+    background: red;
+    width: 100%;
+    height: 2px;
+    display: block;
+    margin-top: 5px;
+}
+
+.nav-tabs .nav-link{
+    padding: 0 15px 0 0;
+    margin-top: 15px;
+}
+
+.nav-tabs .nav-link:last-child{
+    padding: 0;
+}
+
+.nav-tabs {
+    border-bottom: unset;
+}
+
+.sevice-points{
+    list-style: none;
+}
+
+.sevice-points li{
+    display: flex;
+    margin: 20px 0;
+}
+
+.sevice-points li:before{
+    content: '\f058';
+    color: var(--blue);
+    font-weight: normal;
+    font-family: "Font Awesome 6 Free";
+    margin-right: 10px;
+}
+
+.sevice-points li:first-child{
+    margin-top: 0;
+}
+
+.sevice-points li:last-child{
+    margin-bottom: 0;
+}

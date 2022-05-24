@@ -1,9 +1,5 @@
-/*==============================
-=            banner            =
-==============================*/
-
-.carousel-inner{
-	 border: 1px solid rgb(128 128 128 / 25%);
+@media (max-width: 768px){
+	.service-tab{
+	    padding: 5px 10px;
+	}
 }
-
-/*=====  End of banner  ======*/
