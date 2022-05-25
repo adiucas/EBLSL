@@ -16,7 +16,6 @@
 .nav-link.active::after{
     content: "";
     border-bottom: 3px solid var(--green);
-    background: red;
     width: 100%;
     height: 2px;
     display: block;

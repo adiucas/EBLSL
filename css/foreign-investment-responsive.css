@@ -1,0 +1,30 @@
+@media (max-width: 1200px){
+	.foreign-investment-mobile{
+		display: block;
+	}
+	.foreign-investment-mobile .message.right{
+		text-align-last: unset;
+	}
+}
+@media (min-width: 1200px){
+	.foreign-investment{
+		display: block;
+	}
+}
+@media (max-width: 992px){
+	.foreign-investment-mobile .icon{
+		text-align: center;
+	}
+	.foreign-investment-mobile .icon img{
+		width: 200px;
+	}
+}
+@media (max-width: 576px){
+	.banner img{
+		width: unset;
+		top: 0; 
+		left: 0;
+		transform: unset;
+		height: 100%;
+	}
+}

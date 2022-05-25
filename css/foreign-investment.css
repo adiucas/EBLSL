@@ -1,0 +1,109 @@
+.banner{
+	width: 100%;
+	height: calc(100vh - 100px);
+	position: relative;
+	overflow: hidden;
+}
+
+.banner img{
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.banner-title{
+	position: absolute;
+	z-index: 1;
+	background: #1f438dc2;
+	padding: 30px 60px;
+	color: #ffffff;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.foreign-investment .nav-link{
+	text-align: center;
+}
+.nav-link.active::after{
+	content: '\f0de';
+	font-family: 'Font Awesome 6 Free';
+	font-size: 32px;
+	font-weight: bold;
+	color: var(--blue);
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #495057;
+    background-color: unset;
+     border-color: unset; 
+}
+.nav-tabs .nav-link {
+     border: unset;
+     margin-bottom: -37px;
+}
+.foreign-investment-icon{
+	width: 120px;
+	height: 120px;
+	overflow: hidden;
+	border: 2px solid rgb(0 0 0 / 10%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.nav-link.active .foreign-investment-icon{
+	border: 2px solid var(--blue);
+}
+.foreign-investment-icon img{
+}
+.foreign-investment-name{
+	width: 220px;
+	margin-top: 5px;
+	background: var(--blue);
+	padding: 5px 10px;
+	color: #ffffff;
+}
+.foreign-investment-name span{
+	font-family: "Poppins",sans-serif;
+}
+.tab-content{
+	border: 2px solid var(--blue);
+	padding: 30px;
+	text-align: justify;
+}
+.foreign-investment .nav{
+	justify-content: center;
+}
+.foreign-investment{
+	display: none;
+}
+.foreign-investment-mobile{
+	display: none;
+}
+
+.foreign-investment-wrapper{
+	padding: 30px;
+}
+
+.foreign-investment-mobile .foreign-investment-wrapper{
+	border: 2px solid var(--blue);
+}
+
+.foreign-investment-mobile .foreign-investment-wrapper .icon-title{
+	display: flex;
+	align-items: center;
+	margin: -30px;
+	background: #eeeeee;
+	padding: 15px 30px;
+	color: var(--blue);
+}
+
+.foreign-investment-wrapper .desc{
+	margin-top: 50px;
+	font-family: "Merriweather Sans", sans-serif;
+	text-align: justify;
+}
+
+.foreign-investment-wrapper .icon-title img{
+	width: 100%;
+	max-width: 40px;
+}
