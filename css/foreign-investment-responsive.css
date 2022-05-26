@@ -18,13 +18,7 @@
 	.foreign-investment-mobile .icon img{
 		width: 200px;
 	}
-}
-@media (max-width: 576px){
-	.banner img{
+	.carousel-item img{
 		width: unset;
-		top: 0; 
-		left: 0;
-		transform: unset;
-		height: 100%;
 	}
 }

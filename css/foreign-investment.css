@@ -15,7 +15,7 @@
 
 .banner-title{
 	position: absolute;
-	z-index: 1;
+	z-index: 2;
 	background: #1f438dc2;
 	padding: 30px 60px;
 	color: #ffffff;
@@ -106,4 +106,42 @@
 .foreign-investment-wrapper .icon-title img{
 	width: 100%;
 	max-width: 40px;
+}
+
+.carousel-inner{
+	height: calc(100vh - 133px);
+	position: relative;
+}
+.carousel-item img{
+	width: 100%;
+	min-height: calc(100vh + 270px);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -40%);
+}
+
+.digi-serv-points{
+	list-style: none;
+}
+
+.digi-serv-points li{
+	display: flex;
+	margin: 20px 0;
+}
+
+.digi-serv-points li:before{
+	content: '\f058';
+	color: var(--blue);
+	font-weight: normal;
+	font-family: "Font Awesome 6 Free";
+	margin-right: 10px;
+}
+
+.digi-serv-points li:first-child{
+    margin-top: 0;
+}
+
+.digi-serv-points li:last-child{
+    margin-bottom: 0;
 }

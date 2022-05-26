@@ -10,6 +10,8 @@
 	--blue: #1F438D;
 	--green: #0E8341;
 	--light-blue: #43536A;
+	--meri: 'Merriweather Sans', sans-serif;
+	--pop: 'Poppins', sans-serif;
 }
 
 
@@ -162,6 +164,7 @@ p {
 .sec-desc{
 	text-align: justify;
 	text-align-last: center;
+	font-family: var(--meri);
 }
 
 section:hover .sec-title::after{
@@ -205,7 +208,6 @@ section:hover .sec-title::after{
 
 .primary-header .nav-link {
     color: #43536aa1 !important;
-    font-weight: bold;
 }
 
 .navbar {
