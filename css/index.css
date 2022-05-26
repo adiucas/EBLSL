@@ -19,7 +19,7 @@
 	text-align: left;
 }
 #mainBanner .carousel-item{
-	height: 400px;
+	height: calc(100vh - 310px);
 	position: relative;
 }
 #mainBanner .carousel-item img{
