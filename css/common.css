@@ -42,6 +42,7 @@
 
 body{
 	overflow-x: hidden;
+	font-family: 'Merriweather Sans', sans-serif;
 }
 
 a, a:hover, a:focus {
@@ -49,7 +50,7 @@ a, a:hover, a:focus {
 	color: unset;
 }
 
-a, p, span,button{
+a, p, span, button{
 	font-family: 'Merriweather Sans', sans-serif;
 }
 
