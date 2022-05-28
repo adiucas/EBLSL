@@ -1,0 +1,9 @@
+.login-container{	
+	height: calc(100vh - 70px);
+}
+.login-wrapper{
+	background: #ffffff;
+	padding: 30px;
+	width: 50%;
+	border: 1px solid rgb(246 150 30 / 50%);
+}

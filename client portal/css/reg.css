@@ -1,0 +1,19 @@
+
+.login-wrapper{
+	background: #ffffff;
+	padding: 30px;
+	width: 50%;
+	border: 1px solid rgb(246 150 30 / 50%);
+}
+
+.reg-head{
+	color: grey;
+}
+
+.reg-container{
+	color: gray;
+}
+
+.reg-foot{
+	font-size: 14px;
+}
