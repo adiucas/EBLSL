@@ -1,0 +1,14 @@
+@media (max-width: 992px){
+	.cust-tab a{
+		width: 20%;
+	}
+	.cust-tab{
+		flex-wrap: wrap;
+	}
+}
+
+@media (max-width: 768px){
+	.cust-tab{
+		flex-direction: column;
+	}
+}

@@ -10,8 +10,8 @@
 	--blue: #1F438D;
 	--green: #0E8341;
 	--light-blue: #43536A;
-	--meri: 'Merriweather Sans', sans-serif;
-	--pop: 'Poppins', sans-serif;
+	--para: 'Lato', sans-serif;
+	--head: 'Montserrat', sans-serif;
 }
 
 
@@ -42,7 +42,8 @@
 
 body{
 	overflow-x: hidden;
-	font-family: var(--pop);
+	font-family: var(--para);
+	font-weight: 400;
 	background-image: url('../images/bg.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -55,17 +56,13 @@ a, a:hover, a:focus {
 	color: unset;
 }
 
-a, p, span, button{
-	font-family: var(--pop);
-}
-
 a:hover{
 	text-decoration: underline;
 	color: var(--yellow);
 }
 
 h1, h2, h3,h4, h5, h6{
-	font-family: 'Poppins', sans-serif;
+	font-family: var(--head);
 	font-weight: 700;
 }
 
@@ -83,6 +80,11 @@ dl, ol, ul {
 p {
     margin-top: 0;
     margin-bottom: 0;
+}
+
+hr{
+	margin: 0;
+	padding: 0;
 }
 
 .form-control:focus {
@@ -179,7 +181,7 @@ input[type="checkbox"] {
 .sec-desc{
 	text-align: justify;
 	text-align-last: center;
-	font-family: var(--meri);
+	font-family: var(--para);
 }
 
 section:hover .sec-title::after{
@@ -221,10 +223,19 @@ section:hover .sec-title::after{
     text-decoration: none;
     background-color: var(--yellow);
 }
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: rgb(255 255 255);
+    background: var(--yellow);
+}
+.navbar-light .navbar-nav .nav-link.active{
+	color: rgb(255 255 255);
+	background: var(--yellow);
+}
 /*=====  End of universal css  ======*/
 
 /*============================================
-=            portal header public            =
+=            portal header            =
 ============================================*/
 
 .logo{
@@ -232,4 +243,8 @@ section:hover .sec-title::after{
 	max-width: 200px;
 }
 
-/*=====  End of portal header public  ======*/
+.top-nav{
+	border-bottom: 1px solid lightgray;
+}
+
+/*=====  End of portal header  ======*/

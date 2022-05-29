@@ -11,7 +11,7 @@
 	<!-- fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;700&family=Poppins:wght@400;700;900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
 	<!-- css -->
 	<link rel="stylesheet" href="../css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
@@ -27,14 +27,47 @@
 	<!--============================
 	=            header            =
 	=============================-->
-	<section class="header" w3-include-html="../includes/portal header private.html">
+	<section class="header sticky-top" w3-include-html="../includes/portal header private.html">
 	</section>
 
 	<!--===========================
 	=            home            =
 	============================-->
-	
-
+	<section class="container-fluid ptb60 mt-4">
+		<div class="row">
+			<div class="col-8 offset-2">
+				<div class="bo-info">
+					<ul class="nav nav-pills mb-3 justify-content-center bo-info-tab-head" id="pills-tab" role="tablist">
+					  <li class="nav-item">
+					    <a class="nav-link active" id="boInfo" data-toggle="pill" href="#bo-info" role="tab" aria-controls="bo-info" aria-selected="true">BO Information</a>
+					  </li>
+					  <li class="nav-item">
+					    <a class="nav-link" id="otherBO" data-toggle="pill" href="#other-bo" role="tab" aria-controls="other-bo" aria-selected="false">Other BO</a>
+					  </li>
+					</ul>
+					<div class="tab-content" id="pills-tabContent">
+					  <div class="tab-pane fade show active" id="bo-info" role="tabpanel" aria-labelledby="boInfo">
+					  	<p>BO Code: 41XXX (BO ID: 10XXXXXXXXXXX)</p>
+					  	<hr class="pt-1 pb-1">
+					  	<div class="row">
+					  		<div class="col-lg-6">
+					  		  	<p>Ledger Balance:</p>
+					  		  	<p>Portfolio Value:</p>
+					  		</div>
+					  		<div class="col-lg-6">
+					  		  	<p>Purchase Power:</p>
+					  		  	<p>Equity:</p>
+					  		</div>
+					  	</div>
+					  </div>
+					  <div class="tab-pane fade" id="other-bo" role="tabpanel" aria-labelledby="otherBO">
+					  	
+					  </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 </body>
 <!-- scripts -->
 <script>
