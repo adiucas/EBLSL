@@ -1,0 +1,19 @@
+.fund-depo{
+	background: #ffffff;
+	padding: 15px;
+	border: 1px solid lightgray;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: var(--yellow);
+}
+
+.nav-pills .nav-link {
+    border-radius: 0;
+}
+
+.bo-info-tab-head{
+	border-bottom: 1px solid var(--yellow);
+}
+

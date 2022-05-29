@@ -44,11 +44,7 @@ body{
 	overflow-x: hidden;
 	font-family: var(--para);
 	font-weight: 400;
-	background-image: url('../images/bg.jpg');
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
-	height: 100%;
+	background: #eeeeee;
 }
 
 a, a:hover, a:focus {
@@ -201,17 +197,17 @@ section:hover .sec-title::after{
 .btn-primary.focus, .btn-primary:focus {
 	color: #fff;
 	background-color: #D4811A;
-	border-color: var(--green);
-	box-shadow: 0 0 0 0.2rem rgb(22 116 57 / 50%);
+	border-color: var(--yellow);
+	box-shadow: 0 0 0 0.2rem rgb(212 129 26 / 50%);
 }
 .btn-primary:not(:disabled):not(.disabled):active{
 	color: #fff;
 	background-color: #D4811A;
-	border-color: var(--green);
-	box-shadow: 0 0 0 0.2rem rgb(22 116 57 / 50%);
+	border-color: var(--yellow);
+	box-shadow: 0 0 0 0.2rem rgb(212 129 26 / 50%);
 }
 .btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus{
-    box-shadow: 0 0 0 0.2rem rgb(22 116 57 / 50%);
+    box-shadow: 0 0 0 0.2rem rgb(212 129 26 / 50%);
 }
 .form-control{
 	padding: 1.375rem 0.75rem;
@@ -232,6 +228,22 @@ section:hover .sec-title::after{
 	color: rgb(255 255 255);
 	background: var(--yellow);
 }
+
+.form-control{
+	display: unset; 
+	width: unset; 
+	height: unset; 
+	padding: 5px 10px;
+	font-size: unset; 
+	font-weight: 400;
+	line-height: 1.5;
+	color: #495057;
+	background-color: #fff;
+	background-clip: padding-box;
+	border: 1px solid #ced4da;
+	border-radius: 0;
+	transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
 /*=====  End of universal css  ======*/
 
 /*============================================
@@ -248,3 +260,45 @@ section:hover .sec-title::after{
 }
 
 /*=====  End of portal header  ======*/
+
+/*========================================
+=            responsive table            =
+========================================*/
+
+.table-header{
+	background: var(--yellow);
+	font-family: var(--head);
+	color: #ffffff;
+}
+
+.table-header span{
+	display: flex;
+	align-items: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.table-data span{
+	font-size: 14px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.table-header span:not(:last-child){
+	border-right: 1px solid #ffffff;
+}
+
+.table-data .data:not(:last-child){
+	border-right: 1px solid #ffffff;
+}
+
+
+.table-data:nth-child(odd){
+	background: rgb(246 150 30 / 25%);
+}
+
+.table-data:nth-child(even){
+	background: rgb(246 150 30 / 50%);
+}
+
+/*=====  End of responsive table  ======*/
