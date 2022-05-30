@@ -258,6 +258,24 @@ section:hover .sec-title::after{
 	border-radius: 0;
 	transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
+
+.ui-widget-header {
+    border: 1px solid #ddd;
+    background: var(--yellow);
+    color: #fff;
+    font-weight: bold;
+}
+.ui-state-highlight, .ui-widget-content .ui-state-highlight{
+	border: 1px solid #F6961E;
+	    background: #FFBF6E;
+	    color: #895516;
+}
+.ui-state-active, .ui-widget-content .ui-state-active{
+	border: 1px solid #0E224A;
+	    background: var(--blue);
+	    font-weight: bold;
+	    color: #fff;
+}
 /*=====  End of universal css  ======*/
 
 /*============================================

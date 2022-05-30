@@ -30,4 +30,13 @@
 	.nav-link{
 		padding-left: 15px !important;
 	}
+	.table-data:not(:first-child){
+		margin-top: 15px;
+	}
+}
+
+@media (min-width: 992px){
+	.th{
+		display: none;
+	}
 }

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="EBL Securities Limited (EBLSL) is fully owned subsidiary of Eastern Bank Ltd. EBL Securities Ltd. obtained the license from Bangladesh Securities and Exchange Commission (BSEC) as Stock Broker & Stock Dealer and is fully engaged in securities trading for the investors. The company holds the TREC of Dhaka Stock Exchange Limited (TREC No. 026) and Chittagong Stock Exchange Limited (TREC No. 021). It provides brokerage services through both DSE and CSE. The company also holds the Depository Participant (DP) license.">
+	<!-- opengraph -->
+	<meta property="og:image" content="../images/thumbnail.jpg">
+	<title>Buy Sell Order | EBL Securities Ltd.</title>
+	<link rel="icon" type="image/x-icon" href="../images/favicon.png">
+	<!-- fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+	<!-- css -->
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+	<link rel="stylesheet" href="css/jquery-ui.min.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/common-responsive.css">
+	<link rel="stylesheet" href="css/fund-deposit.css">
+	<link rel="stylesheet" href="css/fund-deposit-responsive.css">
+	<!-- scripts -->
+	<script src="../js/jquery-3.6.0.min.js"></script>
+	<script src="../js/jquery-ui.min.js"></script>
+</head>
+<body>
+	<div class="body-overlay" style="min-height: 100vh;"></div>
+	<!--============================
+	=            header            =
+	=============================-->
+	<section class="header sticky-top" w3-include-html="../includes/portal header private.html">
+	</section>
+
+	<!--===========================
+	=            fund deposit            =
+	============================-->
+	<section class="container-fluid ptb30">
+		<div class="row">
+			<div class="col-lg-6 offset-lg-3 col-12">
+				<div class="fund-depo">
+					<h5>Buy Sell Order</h5>
+					<hr class="mt-1 mb-3">
+					<label for="investor-code" class="mr-2">BO Code</label>
+					<select class="form-control" style="width: unset;">
+						<option class="first-option">Select Investor Code</option>
+						<option>4XXXX</option>
+						<option>4XXXX</option>
+						<option>4XXXX</option>
+					</select>
+					<hr class="mt-1 mb-3">
+					<div class="form-row">
+						<div class="form-group col-lg-6">
+							<label for="date">From Date</label>
+							<input type="text" id="frDate" class="form-control">
+						</div>
+						<div class="form-group col-lg-6">
+							<label for="date">To Date</label>
+							<input type="text" id="toDate" class="form-control">
+						</div>
+						<div class="form-group col-lg-6">
+							<label>Print Option</label>
+							<select class="form-control" style="width: 100%;padding: 6.5px 10px;">
+								<option class="first-option">Select Print Option</option>
+								<option>PDF</option>
+								<option>EXCEL</option>
+								<option>DOC</option>
+							</select>
+						</div>
+						<div class="form-group col-lg-6 text-lg-right text-center">
+							<button class="btn btn-primary" style="margin-top: 30px;">PREVIEW</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-6 offset-lg-3 col-12 pt30">
+				<div class="fund-depo">
+					<h5>Pending Buy-Sell Order</h5>
+					<hr class="mt-1 mb-3">
+					<div class="table-header">
+						<div class="row">
+							<span class="col-lg-4 pl-4">Date</span>
+							<span class="col-lg-4">Buy-Sell</span>
+							<span class="col-lg-4">Approval</span>
+						</div>
+					</div>
+					<div class="table-data">
+						<div class="row">
+							<div class="col-lg-4 col-6 data pl-lg-4 pl-sm-3 pl-3">
+								<span class="th">Date</span>
+								<span class="td">demo value</span>
+							</div>
+							<div class="col-lg-4 col-6 data">
+								<span class="th">Buy-Sell</span>
+								<span class="td">demo value</span>
+							</div>
+							<div class="col-lg-4 col-6 data">
+								<span class="th">Approval</span>
+								<span class="td">demo value</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</body>
+<!-- scripts -->
+<script src="../js/main.js"></script>
+<script>
+	includeHTML();
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js" crossorigin="anonymous"></script>
+<script src="../js/popper.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script>
+  $( function() {
+    $( "#frDate" ).datepicker(
+    	{
+    	   changeYear               : true,
+    	   changeMonth              : true,
+    	   yearRange                : "-70:+40",
+    	   maxDate                  : "+40Y",
+    	   minDate                  : "-85Y",
+    	   dateFormat: 'dd/mm/yy'
+    	});
+    $( "#toDate" ).datepicker(
+    	{
+    	   changeYear               : true,
+    	   changeMonth              : true,
+    	   yearRange                : "-70:+40",
+    	   maxDate                  : "+40Y",
+    	   minDate                  : "-85Y",
+    	   dateFormat: 'dd/mm/yy'
+    	});
+  });
+ </script>
+</html>
