@@ -44,7 +44,22 @@ body{
 	overflow-x: hidden;
 	font-family: var(--para);
 	font-weight: 400;
-	background: #eeeeee;
+	background: url('../images/bg.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+	position: relative;
+}
+
+.body-overlay{
+	background-color: rgb(255 255 255 / 50%);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 50px;
+	left: 0;
+	z-index: -1;
 }
 
 a, a:hover, a:focus {
@@ -230,8 +245,7 @@ section:hover .sec-title::after{
 }
 
 .form-control{
-	display: unset; 
-	width: unset; 
+	display: unset;
 	height: unset; 
 	padding: 5px 10px;
 	font-size: unset; 
