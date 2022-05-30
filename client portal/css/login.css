@@ -7,3 +7,7 @@
 	width: 50%;
 	border: 1px solid rgb(246 150 30 / 50%);
 }
+
+.body-overlay{
+	height: 100vh;
+}

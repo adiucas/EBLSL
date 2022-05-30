@@ -53,11 +53,11 @@ body{
 }
 
 .body-overlay{
-	background-color: rgb(255 255 255 / 50%);
+	background-color: rgb(255 255 255 / 80%);
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	top: 50px;
+	top: 0;
 	left: 0;
 	z-index: -1;
 }
@@ -276,7 +276,7 @@ section:hover .sec-title::after{
 /*=====  End of portal header  ======*/
 
 /*========================================
-=            responsive table            =
+=            responsive #E38A1C            =
 ========================================*/
 
 .table-header{
@@ -308,11 +308,11 @@ section:hover .sec-title::after{
 
 
 .table-data:nth-child(odd){
-	background: rgb(246 150 30 / 25%);
+	background: #ffbe6e;
 }
 
 .table-data:nth-child(even){
-	background: rgb(246 150 30 / 50%);
+	background: #ffdaad;
 }
 
 /*=====  End of responsive table  ======*/

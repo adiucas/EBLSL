@@ -23,4 +23,11 @@
 		padding-top: 7px;
 		padding-bottom: 7px
 	}
+	/*header*/
+	.top-nav {
+	    border-bottom: unset;
+	}
+	.nav-link{
+		padding-left: 15px !important;
+	}
 }

@@ -24,6 +24,7 @@
 	<script src="../js/main.js"></script>
 </head>
 <body>
+	<div class="body-overlay"></div>
 	<!--============================
 	=            header            =
 	=============================-->
@@ -33,7 +34,7 @@
 	<!--===========================
 	=            fund deposit            =
 	============================-->
-	<section class="container-fluid ptb30 mt-4">
+	<section class="container-fluid ptb30">
 		<div class="row">
 			<div class="col-lg-6 offset-lg-3 col-12">
 				<div class="fund-depo">
@@ -88,6 +89,46 @@
 					  	</div>
 					  </div>
 					</div>
+				</div>
+			</div>
+			<div class="col-lg-6 offset-lg-3 col-12 pt15">
+				<div class="fund-depo">
+					<h5>Basic Information</h5>
+					<hr class="mt-1 mb-1">
+					<p>Client Code:  41XXX (BO ID: 10XXXXXXXXXXX)</p>
+					<hr class="mt-1 mb-1">
+					<div class="row">
+						<div class="col-lg-6 col-sm-6 col-12">
+						  	<p>Client Name:</p>
+						  	<p>E-mail:</p>
+						</div>
+						<div class="col-lg-6 col-sm-6 col-12">
+						  	<p>Branch:</p>
+						  	<p>Mobile:</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-6 offset-lg-3 col-12 pt15">
+				<div class="fund-depo">
+					<h5>Payment Option</h5>
+					<hr class="mt-1 mb-3">
+					<form>
+						<div class="form-row">
+							<div class="form-group col-md-6">
+								<label for="code">Code</label>
+								<input type="text" class="form-control" id="code">
+							</div>
+							<div class="form-group col-md-6">
+								<label for="amount">Amount</label>
+								<input type="email" class="form-control" id="amount">
+							</div>
+							<div class="form-group col-md-12">
+								<label for="remarks">Remarks</label>
+								<textarea rows="3" class="form-control" style="max-height: 100px;"></textarea>
+							</div>
+						</div>
+					</form>
 				</div>
 			</div>
 		</div>

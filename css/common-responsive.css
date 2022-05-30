@@ -20,11 +20,3 @@
 	}
 }
 
-@media (max-width: 992px){
-	.top-nav {
-	    border-bottom: unset;
-	}
-	.nav-link{
-		padding-left: 15px !important;
-	}
-}
