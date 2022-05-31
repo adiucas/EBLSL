@@ -239,7 +239,8 @@ section:hover .sec-title::after{
     color: rgb(255 255 255);
     background: var(--yellow);
 }
-.navbar-light .navbar-nav .nav-link.active{
+
+#home #hm, #buySell #bso, #fundDepot #fd, #fundWith #fw, #ipoMan #im, #ledger #led, #portfolio #port, #taxCer #tc, #profileUpdate #pu{
 	color: rgb(255 255 255);
 	background: var(--yellow);
 }

@@ -63,7 +63,7 @@
 }
 .bod-member-name span{
 	font-size: 14px;
-	font-family: "Poppins",sans-serif;
+	font-family: var(--head);
 }
 .tab-content{
 	border: 2px solid var(--blue);
@@ -102,10 +102,10 @@
 /*management committee*/
 
 #manCom .bod-member-name{
-    width: 200px;
+    width: 210px;
 }
 
 #manCom .bod-member-photo{
-	width: 200px;
-	height: 210px;
+	width: 210px;
+	height: 220px;
 }

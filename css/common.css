@@ -10,8 +10,8 @@
 	--blue: #1F438D;
 	--green: #0E8341;
 	--light-blue: #43536A;
-	--meri: 'Merriweather Sans', sans-serif;
-	--pop: 'Poppins', sans-serif;
+	--para: 'Lato', sans-serif;
+	--head: 'Montserrat', sans-serif;
 }
 
 
@@ -42,7 +42,7 @@
 
 body{
 	overflow-x: hidden;
-	font-family: 'Merriweather Sans', sans-serif;
+	font-family: var(--para);
 }
 
 a, a:hover, a:focus {
@@ -51,11 +51,11 @@ a, a:hover, a:focus {
 }
 
 a, p, span, button{
-	font-family: 'Merriweather Sans', sans-serif;
+	font-family: var(--para);
 }
 
 h1, h2, h3,h4, h5, h6{
-	font-family: 'Poppins', sans-serif;
+	font-family: var(--head);
 	font-weight: 700;
 }
 
@@ -165,7 +165,7 @@ p {
 .sec-desc{
 	text-align: justify;
 	text-align-last: center;
-	font-family: var(--meri);
+	font-family: var(--para);
 }
 
 section:hover .sec-title::after{
@@ -196,6 +196,11 @@ section:hover .sec-title::after{
 }
 .btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus{
     box-shadow: 0 0 0 0.2rem rgb(22 116 57 / 50%);
+}
+.dropdown-item.active, .dropdown-item:active {
+    color: #fff;
+    text-decoration: none;
+    background-color: var(--yellow);
 }
 /*=====  End of universal css  ======*/
 
@@ -336,7 +341,7 @@ section:hover .sec-title::after{
 .quick-link-label{
 	font-size: 20px;
 	font-weight: bold;
-	font-family: "Poppins", sans-serif;
+	font-family: var(--head);
 	color: var(--blue);
 }
 .map{

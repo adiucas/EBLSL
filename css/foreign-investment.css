@@ -63,7 +63,7 @@
 	color: #ffffff;
 }
 .foreign-investment-name span{
-	font-family: "Poppins",sans-serif;
+	font-family: "Montserrat",sans-serif;
 }
 .tab-content{
 	border: 2px solid var(--blue);
@@ -99,7 +99,7 @@
 
 .foreign-investment-wrapper .desc{
 	margin-top: 50px;
-	font-family: "Merriweather Sans", sans-serif;
+	font-family: "Lato", sans-serif;
 	text-align: justify;
 }
 
