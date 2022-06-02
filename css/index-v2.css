@@ -2,6 +2,10 @@
 =            banner            =
 ==============================*/
 
+#mainBanner{
+	position: relative;
+}
+
 #mainBanner .services{
 	display: flex;
 	flex-direction: column;
