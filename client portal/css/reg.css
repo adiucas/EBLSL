@@ -3,7 +3,7 @@
 	background: #ffffff;
 	padding: 30px;
 	width: 50%;
-	border: 1px solid rgb(246 150 30 / 50%);
+	border: 1px solid var(--blue);
 }
 
 .reg-head{

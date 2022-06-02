@@ -202,6 +202,72 @@ section:hover .sec-title::after{
     text-decoration: none;
     background-color: var(--yellow);
 }
+
+/*accordion*/
+
+.accordion .card-header {
+    padding: 0.75rem 1.25rem;
+    background-color: var(--blue);
+    border-radius: 0;
+}
+
+.accordion .card-body{
+	background: #ffffff;
+}
+
+.card-header .title {
+    font-size: 17px;
+    color: #ffffff;
+    font-family: var(--head);
+}
+.card-header svg{
+	color: #ffffff;
+}
+.card-header .accicon {
+  float: right;
+  font-size: 20px;  
+  width: 1.2em;
+}
+.card-header{
+  cursor: pointer;
+  border-bottom: none;
+}
+.card{
+  border: 1px solid #ddd;
+}
+.rotate-icon{
+	transition: 0.3s all;
+}
+.card-header:not(.collapsed) .rotate-icon {
+  transform: rotate(180deg);
+}
+.accordion .title span{
+	font-family: var(--head);
+}
+
+.accordion .title{
+	display: flex;
+}
+
+.accordion .title .serial{
+	display: flex;
+	align-items: center;
+	margin: -12px 12px -12px -20px;
+	background: var(--yellow);
+	color: var(--blue);
+	width: 54px;
+	justify-content: center;
+}
+
+.accordion .card-header{
+	display: flex;
+	justify-content: space-between;
+}
+
+.accordion .title .serial+span{
+	display: flex;
+	align-items: center;
+}
 /*=====  End of universal css  ======*/
 
 /*==============================

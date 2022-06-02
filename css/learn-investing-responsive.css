@@ -1,0 +1,5 @@
+@media (max-width: 992px){
+	.carousel-item img{
+		width: unset;
+	}
+}

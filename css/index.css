@@ -289,7 +289,7 @@
 }
 
 .cwu-data{
-	margin-top: 50px;
+	margin-top: 30px;
 	margin-left: 100px;
 }
 
@@ -305,7 +305,7 @@
 	line-height: 0;
 }
 
-#Ctg{
+#Dhanmondi, #Ctg1, #Ctg2, #Nikun{
 	display: none;
 }
 .ho-map iframe{

@@ -299,22 +299,25 @@
 				<div class="col-lg-6 left">
 				</div>
 				<div class="col-lg-6 right">
-				  	<ul class="nav nav-pills mb-3 mt-3" id="pills-tab" role="tablist">
+				  	<ul class="nav nav-pills mb-3 mt-3 justify-content-center" id="pills-tab" role="tablist">
 				  	  <li class="nav-item">
-				  	    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true" onclick="changeMap('head-office')">Head Office</a>
+				  	    <a class="nav-link active" id="ho-tab" data-toggle="pill" href="#hO" role="tab" aria-controls="hO" aria-selected="true" onclick="changeMap('head-office')">Head Office</a>
 				  	  </li>
 				  	  <li class="nav-item">
-				  	    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Dhanmondi</a>
+				  	    <a class="nav-link" id="dhanmondi-tab" data-toggle="pill" href="#dhan" role="tab" aria-controls="dhan" aria-selected="false" onclick="changeMap('dhanmondi')">Dhanmondi</a>
 				  	  </li>
 				  	  <li class="nav-item">
-				  	    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false" onclick="changeMap('chitta')">Chattogram</a>
+				  	    <a class="nav-link" id="chatto-tab" data-toggle="pill" href="#chatto" role="tab" aria-controls="chatto" aria-selected="false" onclick="changeMap('chitta1')">Chattogram 1</a>
 				  	  </li>
 				  	  <li class="nav-item">
-				  	    <a class="nav-link" id="pills-4-tab" data-toggle="pill" href="#pills-4" role="tab" aria-controls="pills-4" aria-selected="false">Nikunja</a>
+				  	    <a class="nav-link" id="chatto-tab2" data-toggle="pill" href="#chatto2" role="tab" aria-controls="chatto2" aria-selected="false" onclick="changeMap('chitta2')">Chattogram 2</a>
+				  	  </li>
+				  	  <li class="nav-item">
+				  	    <a class="nav-link" id="nikunja-tab" data-toggle="pill" href="#nikun" role="tab" aria-controls="nikun" aria-selected="false" onclick="changeMap('nikunja')">Nikunja</a>
 				  	  </li>
 				  	</ul>
 				  	<div class="tab-content cwu-data" id="pills-tabContent">
-				  	  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+				  	  <div class="tab-pane fade show active" id="hO" role="tabpanel" aria-labelledby="ho-tab">
 				  	  	<div class="row">
 				  	  		<div class="col-lg-12 col-xl-2 title">
 				  	  		  Address:	
@@ -345,9 +348,108 @@
 				  	  		</div>
 				  	  	</div>
 				  	  </div>
-				  	  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
-				  	  <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
-				  	  <div class="tab-pane fade" id="pills-4" role="tabpanel" aria-labelledby="pills-4-tab">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam magnam voluptatibus amet autem, harum cumque. Quo ut corrupti eius cumque sunt autem, omnis minus magni consequatur blanditiis repudiandae consectetur natus.</div>
+				  	  <div class="tab-pane fade" id="dhan" role="tabpanel" aria-labelledby="dhanmondi-tab">
+				  	  	<div class="row">
+				  	  		<div class="col-lg-12 col-xl-2 title">
+				  	  		  Address:	
+				  	  		</div>
+				  	  		<div class="col-lg-12 col-xl-10">
+				  	  			SIMA BLOSSOM (4th Floor), House # 390 (old), 3 (New) Road # 27 (old), 16 (new), Dhanmondi R/A, Dhaka-1209
+				  	  		</div>
+				  	  		<div class="col-lg-12 col-xl-2 title">
+				  	  			Phone:
+				  	  		</div>
+				  	  		<div class="col-lg-10 col-xl-10">
+				  	  			02 9130268, 02 9130294
+				  	  		</div>
+				  	  		<div class="col-lg-12 col-xl-2 title">
+				  	  			E-mail:
+				  	  		</div>
+				  	  		<div class="col-lg-10 col-xl-10">
+				  	  			info@eblsecurities.com
+				  	  		</div>
+				  	  	</div>
+				  	  </div>
+				  	  <div class="tab-pane fade" id="chatto" role="tabpanel" aria-labelledby="chatto-tab">
+				  	  	<div class="row">
+				  	  		<div class="col-lg-12 col-xl-2 title">
+				  	  		  Address:	
+				  	  		</div>
+				  	  		<div class="col-lg-12 col-xl-10">
+				  	  		  	Suraiya Mansion (6th Floor), 30 Agrabad C/A Chattogram-4100
+				  	  		</div>
+				  	  		<div class="col-lg-12 col-xl-2 title">
+				  	  			Phone:
+				  	  		</div>
+				  	  		<div class="col-lg-10 col-xl-10">
+				  	  			+0312522041-43
+				  	  		</div>
+				  	  		<div class="col-lg-12 col-xl-2 title">
+				  	  			FAX::
+				  	  		</div>
+				  	  		<div class="col-lg-10 col-xl-10">
+				  	  			+0312522041
+				  	  		</div>
+				  	  		<div class="col-lg-12 col-xl-2 title">
+				  	  			E-mail:
+				  	  		</div>
+				  	  		<div class="col-lg-10 col-xl-10">
+				  	  			info@eblsecurities.com
+				  	  		</div>
+				  	  	</div>
+				  	  </div>
+				  	  <div class="tab-pane fade" id="chatto2" role="tabpanel" aria-labelledby="chatto-tab2">
+				  	  	<div class="row">
+				  	  		<div class="col-lg-12 col-xl-2 title">
+				  	  		  Address:	
+				  	  		</div>
+				  	  		<div class="col-lg-12 col-xl-10">
+				  	  		  	Khatungonj Trade Centre (3rd Floor), 
+				  	  		  	1625/1351 Ramjoy Mohajan Lane, Post Office 
+				  	  		  	Goli, 35 Bakshirhat, Kotwali, Chattogram
+				  	  		</div>
+				  	  		<div class="col-lg-12 col-xl-2 title">
+				  	  			Phone:
+				  	  		</div>
+				  	  		<div class="col-lg-10 col-xl-10">
+				  	  			+0312522041-43
+				  	  		</div>
+				  	  		<div class="col-lg-12 col-xl-2 title">
+				  	  			FAX::
+				  	  		</div>
+				  	  		<div class="col-lg-10 col-xl-10">
+				  	  			+0312522041
+				  	  		</div>
+				  	  		<div class="col-lg-12 col-xl-2 title">
+				  	  			E-mail:
+				  	  		</div>
+				  	  		<div class="col-lg-10 col-xl-10">
+				  	  			info@eblsecurities.com
+				  	  		</div>
+				  	  	</div>
+				  	  </div>
+				  	  <div class="tab-pane fade" id="nikun" role="tabpanel" aria-labelledby="nikunja-tab">
+				  	  	<div class="row">
+				  	  		<div class="col-lg-12 col-xl-2 title">
+				  	  		  Address:	
+				  	  		</div>
+				  	  		<div class="col-lg-12 col-xl-10">
+				  	  			DSE Tower (Level-10), Room # 199, Plot # 46, Road # 21 Nikunja-2, Dhaka-1229
+				  	  		</div>
+				  	  		<div class="col-lg-12 col-xl-2 title">
+				  	  			Phone:
+				  	  		</div>
+				  	  		<div class="col-lg-10 col-xl-10">
+				  	  			+88 02 41040160,+88 02 41040161
+				  	  		</div>
+				  	  		<div class="col-lg-12 col-xl-2 title">
+				  	  			E-mail:
+				  	  		</div>
+				  	  		<div class="col-lg-10 col-xl-10">
+				  	  			info@eblsecurities.com
+				  	  		</div>
+				  	  	</div>
+				  	  </div>
 				  	</div>
 				</div>
 			</div>
@@ -359,8 +461,17 @@
 	<section id="headOffice" class="ho-map">
 		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1291.3712465856913!2d90.4147156006995!3d23.72777791550528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b85a9ed2f847%3A0x1333aace49b51dc4!2sEBL%20Securities%20Limited.%20(Head%20Office)!5e0!3m2!1sen!2sbd!4v1650446947518!5m2!1sen!2sbd" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 	</section>
-	<section id="Ctg" class="ho-map">
+	<section id="Dhanmondi" class="ho-map">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d912.9408758181846!2d90.37454685039148!3d23.755811500000014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755bf534d2c97f9%3A0xfbf0c34dea846ed0!2sSIMA%20BLOSSOM!5e0!3m2!1sen!2sbd!4v1654148919142!5m2!1sen!2sbd" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	</section>
+	<section id="Ctg1" class="ho-map">
 		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7381.495911645078!2d91.811168!3d22.32537!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x80e64e7fd84c0770!2sEBL%20Securities%20Ltd.%20Chittagong%20Branch!5e0!3m2!1sen!2sbd!4v1653994602892!5m2!1sen!2sbd" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	</section>
+	<section id="Ctg2" class="ho-map">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1551.6275928943994!2d91.84353808156723!3d22.33802377062726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30ad2745c987c241%3A0xb700f8805d589f3a!2sEastern%20Bank%20Limited!5e0!3m2!1sen!2sbd!4v1654150265231!5m2!1sen!2sbd" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	</section>
+	<section id="Nikun" class="ho-map">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d456.1880320966348!2d90.41709247668658!3d23.83622136700441!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c70158e2de1f%3A0x4e6e5c092986c2e3!2sDSE%20Tower%2C%20Nikunja%202%2C%20Dhaka!5e0!3m2!1sen!2sbd!4v1654151099989!5m2!1sen!2sbd" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 	</section>
 	<!--============================
 	=            footer            =

@@ -6,7 +6,7 @@
 
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
     color: #fff;
-    background-color: var(--yellow);
+    background-color: var(--blue);
 }
 
 .nav-pills .nav-link {
@@ -14,6 +14,6 @@
 }
 
 .bo-info-tab-head{
-	border-bottom: 1px solid var(--yellow);
+	border-bottom: 1px solid var(--blue);
 }
 

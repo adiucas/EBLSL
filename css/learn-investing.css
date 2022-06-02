@@ -1,0 +1,52 @@
+.banner{
+	width: 100%;
+	height: calc(100vh - 100px);
+	position: relative;
+	overflow: hidden;
+}
+
+.banner img{
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.banner-title{
+	position: absolute;
+	z-index: 2;
+	background: #1f438dc2;
+	padding: 30px 60px;
+	color: #ffffff;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.carousel-inner{
+	height: calc(100vh - 133px);
+	position: relative;
+}
+.carousel-item img{
+	width: 100%;
+	min-height: calc(100vh + 270px);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -40%);
+}
+
+.accordion .card-body li{
+	display: flex;
+}
+
+.accordion .card-body li:not(:last-child){
+	margin-bottom: 15px;
+}
+
+.accordion .card-body li:before{
+	content: '\f058';
+	margin-right: 10px;
+	font-family: 'Font Awesome 6 Free';
+	color: var(--blue);
+}
