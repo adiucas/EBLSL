@@ -1,0 +1,57 @@
+hr{
+	margin: 0;
+}
+
+.rtBg{
+	background: url('../images/research-portal/rp-bg.svg');
+	background-size: cover;
+	background-position: center;
+}
+
+.research-team{
+	background: rgb(238 238 238 / 90%);
+}
+
+.research-team .nav{
+	justify-content: center;
+}
+
+.research-team .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: var(--blue);
+    border-radius: 0;
+}
+
+.rs-wrapper{
+	display: flex;
+	align-items: center;
+}
+
+.rs-wrapper img{
+	max-width: 40px;
+}
+
+.team-tab .card-header img{
+	width: 100%;
+	max-width: 70px;
+	border: 1px solid var(--blue);
+	padding-top: 15px;
+}
+
+.team-tab .card-header{
+	display: flex;
+	align-items: center;
+}
+
+.team-tab .name-des{
+	margin-left: 15px;
+}
+
+.team-tab .name-des p{
+	font-size: 18px;
+	color: var(--yellow);
+}
+
+.team-tab .name-des h5{
+	color: var(--blue);
+}

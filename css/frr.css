@@ -1,0 +1,28 @@
+.rpBg{
+	background: url('../images/research-portal/rp-bg.svg');
+	background-size: cover;
+	background-position: center;
+}
+
+.rpBg>div{
+	background-color: rgb(238 238 238 / 90%);
+}
+
+.rpBg .card-header{
+	color: var(--blue);
+}
+
+.card-header svg{
+	color: var(--blue);
+	fill: var(--blue);
+	font-size: 18px;
+}
+
+.card-header{
+	display: flex;
+	align-items: center;
+}
+
+.card{
+	margin: 15px 0;
+}
