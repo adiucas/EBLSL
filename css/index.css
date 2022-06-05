@@ -20,16 +20,10 @@
 	text-align: left;
 }
 #mainBanner .carousel-item{
-	height: calc(100vh - 310px);
 	position: relative;
 }
 #mainBanner .carousel-item img{
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	max-width: 2000px;
-	min-height: 400px;
+	width: 100%;
 }
 #mainBanner .carousel-overlay{
 	background: var(--blue);
