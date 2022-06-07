@@ -1,0 +1,77 @@
+.rrBg{
+	background: url('../images/research-portal/rp-bg.svg');
+	background-size: cover;
+	background-position: center;
+}
+
+.rrBg>div{
+	background-color: rgb(238 238 238 / 90%);
+}
+
+.filter{
+	background: #ffffff;
+	padding: 15px;
+}
+
+.f-header>div svg, .f-header>div h6{
+	color: var(--blue);
+	fill: var(--blue);
+}
+
+.filter li{
+	margin: 7px 0;
+}
+
+.rr-header{
+	background: #ffffff;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.th-wrapper{
+	display: flex;
+	align-items: center;
+	color: var(--blue);
+	fill: var(--blue);
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.th-wrapper svg{
+	width: 16px;
+	margin-right: 10px;	
+}
+
+.th-wrapper span{
+	font-family: var(--head);
+}
+
+.th-wrapper:hover{
+	cursor: pointer;
+	background: var(--blue);
+	fill: #ffffff;
+	color: #ffffff;
+}
+
+.rr-tbody{
+	background: #fff;
+	margin: 10px 0;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.rr-tbody .td{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	display: flex;
+	flex-direction: column;
+}
+
+.td svg{
+	width: 30px;
+	fill: var(--blue);
+}
+
+.m-th{
+	color: var(--blue);
+}

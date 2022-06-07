@@ -74,6 +74,9 @@ p {
     margin-top: 0;
     margin-bottom: 0;
 }
+hr{
+	margin: 0;
+}
 
 .form-control:focus {
     border-color: #a7ce71;

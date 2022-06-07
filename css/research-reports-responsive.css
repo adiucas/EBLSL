@@ -1,0 +1,11 @@
+@media (min-width: 992px){
+	.m-th{
+		display: none;
+	}
+}
+
+@media (max-width: 992px){
+	.rr-header{
+		display: none;
+	}
+}
