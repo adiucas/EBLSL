@@ -1,0 +1,94 @@
+.rlBg{
+	background: url('../images/research-portal/rp-bg.svg');
+	background-size: cover;
+}
+
+.rlBg>div{
+	background-color: rgb(238 238 238 / 90%);
+}
+
+.rl-text{
+	text-align: center;
+	font-size: 30px;
+	color: var(--blue);
+}
+
+.login-wrapper{
+	background: #ffffff;
+	padding: 30px;
+	border: 1px solid var(--blue);
+}
+
+.login-wrapper *{
+	border-radius: 0;
+}
+
+.reg-head{
+	color: grey;
+}
+
+.reg-container{
+	color: gray;
+}
+
+.reg-foot{
+	font-size: 14px;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: var(--blue);
+    border-color: var(--blue);
+}
+.btn-primary:hover {
+    color: #fff;
+    background-color: #132956;
+    border-color: #132956;
+}
+.btn-primary.focus, .btn-primary:focus {
+	color: #fff;
+	background-color: #132956;
+	border-color: var(--blue);
+	box-shadow: 0 0 0 0.2rem rgb(31 67 141 / 25%);
+}
+.btn-primary:not(:disabled):not(.disabled):active{
+	color: #fff;
+	background-color: #132956;
+	border-color: var(--blue);
+	box-shadow: 0 0 0 0.2rem rgb(31 67 141 / 25%);
+}
+.btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus{
+    box-shadow: 0 0 0 0.2rem rgb(31 67 141 / 25%);
+}
+
+.form-control:focus {
+    border-color: var(--blue);
+    box-shadow: 0 0 0 0.2rem rgb(31 67 141 / 25%);
+}
+
+.subscribe-to-our{
+	color: var(--blue);
+	line-height: 1.2;
+	font-size: 50px;
+}
+
+.grdp{
+	margin-top: 30px;
+}
+
+.grdp .head{
+	background: var(--blue);
+	padding: 15px;
+	text-align: center;
+	color: #ffffff;
+}
+
+.grdp .body{
+	background: #ffffff;
+}
+
+.grdp img{
+	width: 100%;
+	max-width: 180px;
+	padding: 15px;
+}

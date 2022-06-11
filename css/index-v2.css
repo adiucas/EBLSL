@@ -32,8 +32,7 @@
 	width: 100%;
 	color: var(--blue);
 	align-items: center;
-	padding: 5px 10px;
-	transition: 0.3s all;
+	padding: 15px 20px;
 }
 
 .service-wrapper .title svg{
@@ -79,14 +78,6 @@
 }
 
 /*=====  End of banner  ======*/
-
-/*================================
-=            services            =
-================================*/
-
-
-
-/*=====  End of services  ======*/
 
 
 /*======================================
@@ -269,10 +260,60 @@
 }
 /*=====  End of connect with us  ======*/
 
+/*==============================
+=            awards            =
+==============================*/
+
+#Award.carousel{
+	width: 100%;
+	background: var(--blue);
+}
+
+#Award .carousel-inner{
+	height: 300px;
+}
+
+#Award img{
+	height: 400px;
+	position: absolute;
+    right: 0;
+    top: -65px;
+}
+
+#Award .carousel-item.active {
+    display: flex;
+}
+
+#Award .carousel-item {
+    display: none;
+    height: 100%;
+    align-items: center;
+    padding-left: 110px;
+}
+
+#Award .carousel-caption {
+	width: 50%;
+	position: unset; 
+	right: unset; 
+	bottom: unset; 
+	left: unset; 
+	z-index: 10;
+	padding-top: unset; 
+	padding-bottom: unset; 
+	color: #fff;
+	text-align: unset; 
+	display: flex;
+	flex-direction: column;
+}
+
+/*=====  End of awards  ======*/
+
+
 /*===========================
 =            map            =
 ===========================*/
 .ho-map{
+	width: 100%;
 	line-height: 0;
 }
 
