@@ -17,13 +17,166 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 	<link rel="stylesheet" href="css/common.css">
 	<link rel="stylesheet" href="css/common-responsive.css">
-	<link rel="stylesheet" href="css/index-v2.css">
-	<link rel="stylesheet" href="css/index-v2-responsive.css">
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/index-responsive.css">
 	<!-- scripts -->
 	<script src="js/jquery-3.6.0.min.js"></script>
 	<script src="js/main.js"></script>
+	<script>
+		$(document).ready(function(){
+		    $("#noticeModal").modal('show');
+		});
+	</script>
 </head>
 <body id="eblslHome">
+	<!--==============================
+	=            dse ticker            =
+	===============================-->
+	<section class="dse-ticker">
+		<marquee direction="left" scrollamount="10" onmouseout="this.start();" onmouseover="this.stop();">
+			<div class="ticker-wrapper">
+				<div class="top">
+					<span class="mr-2">Lorem</span>
+					<span class="mr-2">18.40</span>
+					<span class="up"><i class="fa-solid fa-circle-up"></i></span>
+				</div>
+				<div class="bottom">
+					<span class="mr-2">0.20</span>
+					<span>1.10%</span>
+				</div>
+			</div>
+			<div class="ticker-wrapper">
+				<div class="top">
+					<span class="mr-2">Lorem</span>
+					<span class="mr-2">18.40</span>
+					<span class="down"><i class="fa-solid fa-circle-down"></i></span>
+				</div>
+				<div class="bottom">
+					<span class="mr-2">0.20</span>
+					<span>1.10%</span>
+				</div>
+			</div>
+			<div class="ticker-wrapper">
+				<div class="top">
+					<span class="mr-2">Lorem</span>
+					<span class="mr-2">18.40</span>
+					<span class="neutral">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 16C123.42 16 16 123.42 16 256S123.42 496 256 496C388.582 496 496 388.58 496 256S388.582 16 256 16ZM360.625 319.375L269.125 410.625C265.625 414 260.875 416 256 416S246.5 414 243 410.625L151.375 319.375C139.875 307.875 148 288 164.5 288H347.5C364 288 372.125 307.875 360.625 319.375ZM347.5 224H164.5C148 224 139.875 204.125 151.375 192.625L243 101.375C246.5 98 251.125 96 256 96S265.625 98 269.125 101.375L360.625 192.625C372.125 204.125 364 224 347.5 224Z"/></svg>
+					</span>
+				</div>
+				<div class="bottom">
+					<span class="mr-2">0.20</span>
+					<span>1.10%</span>
+				</div>
+			</div>
+			<div class="ticker-wrapper">
+				<div class="top">
+					<span class="mr-2">Lorem</span>
+					<span class="mr-2">18.40</span>
+					<span class="up"><i class="fa-solid fa-circle-up"></i></span>
+				</div>
+				<div class="bottom">
+					<span class="mr-2">0.20</span>
+					<span>1.10%</span>
+				</div>
+			</div>
+			<div class="ticker-wrapper">
+				<div class="top">
+					<span class="mr-2">Lorem</span>
+					<span class="mr-2">18.40</span>
+					<span class="down"><i class="fa-solid fa-circle-down"></i></span>
+				</div>
+				<div class="bottom">
+					<span class="mr-2">0.20</span>
+					<span>1.10%</span>
+				</div>
+			</div>
+			<div class="ticker-wrapper">
+				<div class="top">
+					<span class="mr-2">Lorem</span>
+					<span class="mr-2">18.40</span>
+					<span class="neutral">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 16C123.42 16 16 123.42 16 256S123.42 496 256 496C388.582 496 496 388.58 496 256S388.582 16 256 16ZM360.625 319.375L269.125 410.625C265.625 414 260.875 416 256 416S246.5 414 243 410.625L151.375 319.375C139.875 307.875 148 288 164.5 288H347.5C364 288 372.125 307.875 360.625 319.375ZM347.5 224H164.5C148 224 139.875 204.125 151.375 192.625L243 101.375C246.5 98 251.125 96 256 96S265.625 98 269.125 101.375L360.625 192.625C372.125 204.125 364 224 347.5 224Z"/></svg>
+					</span>
+				</div>
+				<div class="bottom">
+					<span class="mr-2">0.20</span>
+					<span>1.10%</span>
+				</div>
+			</div>
+			<div class="ticker-wrapper">
+				<div class="top">
+					<span class="mr-2">Lorem</span>
+					<span class="mr-2">18.40</span>
+					<span class="up"><i class="fa-solid fa-circle-up"></i></span>
+				</div>
+				<div class="bottom">
+					<span class="mr-2">0.20</span>
+					<span>1.10%</span>
+				</div>
+			</div>
+			<div class="ticker-wrapper">
+				<div class="top">
+					<span class="mr-2">Lorem</span>
+					<span class="mr-2">18.40</span>
+					<span class="down"><i class="fa-solid fa-circle-down"></i></span>
+				</div>
+				<div class="bottom">
+					<span class="mr-2">0.20</span>
+					<span>1.10%</span>
+				</div>
+			</div>
+			<div class="ticker-wrapper">
+				<div class="top">
+					<span class="mr-2">Lorem</span>
+					<span class="mr-2">18.40</span>
+					<span class="neutral">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 16C123.42 16 16 123.42 16 256S123.42 496 256 496C388.582 496 496 388.58 496 256S388.582 16 256 16ZM360.625 319.375L269.125 410.625C265.625 414 260.875 416 256 416S246.5 414 243 410.625L151.375 319.375C139.875 307.875 148 288 164.5 288H347.5C364 288 372.125 307.875 360.625 319.375ZM347.5 224H164.5C148 224 139.875 204.125 151.375 192.625L243 101.375C246.5 98 251.125 96 256 96S265.625 98 269.125 101.375L360.625 192.625C372.125 204.125 364 224 347.5 224Z"/></svg>
+					</span>
+				</div>
+				<div class="bottom">
+					<span class="mr-2">0.20</span>
+					<span>1.10%</span>
+				</div>
+			</div>
+			<div class="ticker-wrapper">
+				<div class="top">
+					<span class="mr-2">Lorem</span>
+					<span class="mr-2">18.40</span>
+					<span class="up"><i class="fa-solid fa-circle-up"></i></span>
+				</div>
+				<div class="bottom">
+					<span class="mr-2">0.20</span>
+					<span>1.10%</span>
+				</div>
+			</div>
+			<div class="ticker-wrapper">
+				<div class="top">
+					<span class="mr-2">Lorem</span>
+					<span class="mr-2">18.40</span>
+					<span class="down"><i class="fa-solid fa-circle-down"></i></span>
+				</div>
+				<div class="bottom">
+					<span class="mr-2">0.20</span>
+					<span>1.10%</span>
+				</div>
+			</div>
+			<div class="ticker-wrapper">
+				<div class="top">
+					<span class="mr-2">Lorem</span>
+					<span class="mr-2">18.40</span>
+					<span class="neutral">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 16C123.42 16 16 123.42 16 256S123.42 496 256 496C388.582 496 496 388.58 496 256S388.582 16 256 16ZM360.625 319.375L269.125 410.625C265.625 414 260.875 416 256 416S246.5 414 243 410.625L151.375 319.375C139.875 307.875 148 288 164.5 288H347.5C364 288 372.125 307.875 360.625 319.375ZM347.5 224H164.5C148 224 139.875 204.125 151.375 192.625L243 101.375C246.5 98 251.125 96 256 96S265.625 98 269.125 101.375L360.625 192.625C372.125 204.125 364 224 347.5 224Z"/></svg>
+					</span>
+				</div>
+				<div class="bottom">
+					<span class="mr-2">0.20</span>
+					<span>1.10%</span>
+				</div>
+			</div>
+		</marquee>
+	</section>
+
 	<!--============================
 	=            header            =
 	=============================-->
@@ -33,7 +186,58 @@
 	<!--============================
 	=            banner            =
 	=============================-->
-	<div id="mainBanner" class="container-fluid ptb30">
+	<div id="mainBanner" class="carousel slide carousel-fade d-none d-lg-block" data-ride="carousel">
+	  <ol class="carousel-indicators">
+	    <li data-target="#mainBanner" data-slide-to="0" class="active"></li>
+	    <li data-target="#mainBanner" data-slide-to="1"></li>
+	    <li data-target="#mainBanner" data-slide-to="2"></li>
+	  </ol>
+	  <div class="carousel-inner">
+	    <div class="carousel-item active">
+	      <img src="images/test.jpg" class="d-block">
+	    </div>
+	    <div class="floating-menu-left">
+	    	<a href="">
+	    		<div class="menu">
+	    			ebl self service
+	    		</div>
+	    	</a>
+	    </div>
+	    <div class="floating-menu-right">
+	    	<a href="">
+	    		<div class="menu">
+	    			apply now
+	    		</div>
+	    	</a>
+	    	<a href="" data-toggle="tooltip" data-placement="left" title="Call Us">
+	    		<div class="menu">
+	    			<i class="fa-solid fa-phone"></i>
+	    		</div>
+	    	</a>
+	    	<a href="" data-toggle="tooltip" data-placement="left" title="Find Us">
+	    		<div class="menu">
+	    			<i class="fa-solid fa-location-dot"></i>
+	    		</div>
+	    	</a>
+	    	<a href="">
+	    		<div class="menu" data-toggle="tooltip" data-placement="left" title="BO Deposit">
+	    			<i class="fa-solid fa-sack-dollar"></i>
+	    		</div>
+	    	</a>
+	    	<a href="">
+	    		<div class="menu" data-toggle="tooltip" data-placement="left" title="Financial Goal Calculator">
+	    			<i class="fa-solid fa-calculator"></i>
+	    		</div>
+	    	</a>
+	    	<a href="" data-toggle="tooltip" data-placement="left" title="Need Help ?">
+	    		<div class="menu">
+	    			<i class="fa-solid fa-circle-question"></i>
+	    		</div>
+	    	</a>
+	    </div>
+	  </div>
+	</div>
+	<div id="mainBanner" class="container-fluid ptb30 d-block d-lg-none">
 		<div class="row">
 			<div class="container">
 				<div class="row">
@@ -51,7 +255,7 @@
 					  	      <img src="images/main-banners/1.jpeg" class="d-block w-100">
 					  	    </div>
 					  	    <div class="carousel-item">
-					  	      <img src="images/main-banners/2.jpeg" class="d-block w-100">
+					  	      <img src="images/main-banners/2.jpg" class="d-block w-100">
 					  	    </div>
 					  	    <div class="carousel-item">
 					  	      <img src="images/main-banners/3.jpeg" class="d-block w-100">
@@ -184,11 +388,90 @@
 			</a>
 		</div>
 	</div>
-	
 	<!--==================================
 	=            our services            =
 	===================================-->
-	
+	<section class="os-section pt15 container-fluid d-none d-lg-block">
+		<div class="row">
+			<div class="col-lg-3 col-md-4 col-sm-6  os-card">
+				<div class="os-card-wrapper">
+					<a href="">
+						<div class="os-card-learn-more">
+							<img src="images/services/s1.png" class="img-fluid">
+							<p>Retail Brokerage <br> Service</p>
+							<div class="lm-text">learn more</div>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 os-card">
+				<div class="os-card-wrapper">
+					<a href="">
+						<div class="os-card-learn-more">
+							<img src="images/services/s2.png" class="img-fluid">
+							<p>Corporate <br> & HNIs</p>
+							<div class="lm-text">learn more</div>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 os-card">
+				<div class="os-card-wrapper">
+					<a href="">
+						<div class="os-card-learn-more">
+							<img src="images/services/s3.png" class="img-fluid">
+							<p>Foreign <br> & NRB</p>
+							<div class="lm-text">learn more</div>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 os-card">
+				<div class="os-card-wrapper">
+					<a href="">
+						<div class="os-card-learn-more">
+							<img src="images/services/s4.png" class="img-fluid">
+							<p>Margin <br> Loan</p>
+							<div class="lm-text">learn more</div>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 os-card">
+				<div class="os-card-wrapper">
+					<a href="">
+						<div class="os-card-learn-more">
+							<img src="images/services/s5.png" class="img-fluid">
+							<p>VIP Trading <br> Booth</p>
+							<div class="lm-text">learn more</div>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 os-card">
+				<div class="os-card-wrapper">
+					<a href="">
+						<div class="os-card-learn-more">
+							<img src="images/services/s6.png" class="img-fluid">
+							<p>Dedicated <br> RM</p>
+							<div class="lm-text">learn more</div>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 offset-md-4 offset-lg-0 col-sm-6 os-card">
+				<div class="os-card-wrapper">
+					<a href="">
+						<div class="os-card-learn-more">
+							<img src="images/services/s7.png" class="img-fluid">
+							<p>Digital <br> Services</p>
+							<div class="lm-text">learn more</div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
 	<!--====================================
 	=            why choose ebl            =
 	=====================================-->
@@ -297,7 +580,7 @@
 	<!--=====================================
 	=            connect with us            =
 	======================================-->
-	<section class="connect-with-us">
+	<section class="connect-with-us" id="connectWithUs">
 		<div class="box">
 			<h4>CONNECT</h4>
 			<h2>WITH US</h2>
@@ -332,8 +615,8 @@
 				  	  		  Address:	
 				  	  		</div>
 				  	  		<div class="col-lg-12 col-xl-10">
-				  	  		  	JibanBimaBhaban(1st Floor)
-				  	  		  	10 Dilkusha,Dhaka-1000
+				  	  		  	Jiban Bima Bhaban (1st Floor)
+				  	  		  	10 Dilkusha, Dhaka-1000
 				  	  		</div>
 				  	  		<div class="col-lg-12 col-xl-2 title">
 				  	  			Phone:
@@ -465,11 +748,11 @@
 		</div>
 	</section>
 	<!--=========================
-	=            map            =
+	=         award & map    =
 	==========================-->
 	<section class="container-fluid">
 		<div class="row">
-			<div class="col-lg-6">
+			<div class="col-lg-6 order-lg-first order-last">
 			  	<div class="row">
 			  		<div id="Award" class="carousel slide" data-ride="carousel">
 			  		  <ol class="carousel-indicators">
@@ -565,6 +848,7 @@
 	=============================-->
 	<section class="container-fluid footer ptb30" w3-include-html="includes/footer.html">
 	</section>
+
 </body>
 <!-- scripts -->
 <script>

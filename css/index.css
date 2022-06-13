@@ -67,6 +67,82 @@
 	transform: rotate(270deg);
 }
 
+/*mobile banner*/
+#mainBanner{
+	position: relative;
+}
+
+#mainBanner .services{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;
+}
+
+#mainBanner .services a{
+	display: flex;
+}
+
+#mainBanner .services a:hover .title{
+	background: var(--blue);
+	color: #ffffff;
+}
+
+#mainBanner .services a:hover .title svg{
+	fill: #ffffff;
+}
+
+#mainBanner .service-wrapper .title{
+	display: flex;
+	border: 1px solid var(--blue);
+	width: 100%;
+	color: var(--blue);
+	align-items: center;
+	padding: 15px 20px;
+}
+
+.service-wrapper .title svg{
+	width: 20px;
+	height: 20px;
+	fill: var(--blue);
+}
+
+.service-wrapper .title span{
+	font-family: var(--head);    
+}
+
+#mainBanner .floating-menu-left{
+	position: absolute;
+	top: 50%;
+	left: 0;
+	text-transform: uppercase;
+	z-index: 2;
+	display: flex;
+	transform: rotate(-90deg) translateX(-50%);
+	transform-origin: top left;
+}
+#mainBanner .floating-menu-right{
+	position: absolute;
+	top: 50%;
+	right: 0;
+	text-transform: uppercase;
+	z-index: 2;
+	display: flex;
+	transform: rotate(90deg) translateX(50%);
+	transform-origin: top right;
+}
+#mainBanner .menu{
+	background: var(--blue);
+	color: #ffffff;
+	padding: 5px 10px;
+	border-right: 2px solid var(--green);
+	border-left: 2px solid var(--green);
+	font-size: 14px;
+}
+.menu i, .menu svg{
+	transform: rotate(270deg);
+}
+
 /*=====  End of banner  ======*/
 
 /*====================================
@@ -293,6 +369,54 @@
 }
 /*=====  End of connect with us  ======*/
 
+/*==============================
+=            awards            =
+==============================*/
+
+#Award.carousel{
+	width: 100%;
+	background: var(--blue);
+}
+
+#Award .carousel-inner{
+	height: 300px;
+}
+
+#Award img{
+	height: 400px;
+	position: absolute;
+    right: 0;
+    top: -65px;
+}
+
+#Award .carousel-item.active {
+    display: flex;
+}
+
+#Award .carousel-item {
+    display: none;
+    height: 100%;
+    align-items: center;
+    padding-left: 110px;
+}
+
+#Award .carousel-caption {
+	width: 50%;
+	position: unset; 
+	right: unset; 
+	bottom: unset; 
+	left: unset; 
+	z-index: 10;
+	padding-top: unset; 
+	padding-bottom: unset; 
+	color: #fff;
+	text-align: unset; 
+	display: flex;
+	flex-direction: column;
+}
+
+/*=====  End of awards  ======*/
+
 /*===========================
 =            map            =
 ===========================*/
@@ -310,3 +434,62 @@
 }
 
 /*=====  End of map  ======*/
+
+/*==================================
+=            dse ticker            =
+==================================*/
+
+.dse-ticker{
+	bottom: 0;
+	position: fixed;
+	z-index: 20;
+	background: #eeeeee;
+	padding: 5px 15px 0;
+	box-shadow: 0 1px 20px rgb(0 0 0 / 50%);
+	font-family: var(--para);
+	width: 100%;
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
+.dse-ticker .top .up{
+	fill: green;
+	color: green;
+}
+
+.dse-ticker .top .down{
+	fill: red;
+	color: red;
+}
+
+.dse-ticker .top{
+	display: flex;
+	align-items: center;
+}
+
+.dse-ticker .top .neutral{
+	fill: gray;
+	color: gray;
+	width: 14px;
+	height: 14px;
+}
+
+.dse-ticker .top .neutral svg{
+	width: 14px;
+	display: flex;
+}
+
+.ticker-wrapper{
+	display: inline-block;
+}
+
+.ticker-wrapper:not(:first-child){
+	margin-left: 20px;
+}
+
+.footer .row{
+	margin-bottom: 30px;
+}
+
+/*=====  End of dse ticker  ======*/
+

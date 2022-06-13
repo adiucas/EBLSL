@@ -73,3 +73,33 @@
 		max-width: 14.28571%;
 	}
 }
+
+@media (max-width: 992px){
+	/*award*/
+	#Award .carousel-inner {
+	     height: unset; 
+	}
+	#Award .carousel-item {
+	     padding-left: unset; 
+	     flex-direction: column;
+	}
+	#Award img {
+		height: unset; 
+		position: unset; 
+		right: 0; 
+		top: unset; 
+		margin-top: -180px;
+	}
+	#Award .carousel-caption {
+	    margin-top: -105px;
+	    margin-bottom: 35px;
+	    text-align: center;
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1200px){
+	/*award*/
+	#Award img{
+	    right: -5%;
+	}
+}
