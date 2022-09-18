@@ -26,8 +26,39 @@ function includeHTML() {
   }
 }
 
+$('.custom-file input').change(function (e) {
+    if (e.target.files.length) {
+        $(this).next('.custom-file-label').html(e.target.files[0].name);
+    }
+});
+
 $('.first-option').hide();
 
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 })
+
+var timeoutHandle;
+    function countdown(minutes, seconds) {
+        function tick() {
+            var counter = document.getElementById("otpTimer");
+            counter.innerHTML = "OTP will expire in " +
+                minutes.toString() + ":" + (seconds < 10 ? "0" : "") + String(seconds);
+            seconds--;
+            if (seconds >= 0) {
+              document.getElementById("otpTimer").style.display = "block";
+              document.getElementById("resetBtn").style.display = "none";
+                timeoutHandle = setTimeout(tick, 1000);
+            } else {
+              document.getElementById("otpTimer").style.display = "none";
+              document.getElementById("resetBtn").style.display = "block";
+                if (minutes >= 1) {
+                    // countdown(mins-1);   never reach “00″ issue solved:Contributed by Victor Streithorst
+                    setTimeout(function () {
+                        countdown(minutes - 1, 59);
+                    }, 1000);
+                }
+            }
+        }
+        tick();
+}

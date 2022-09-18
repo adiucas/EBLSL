@@ -187,6 +187,29 @@
 .os-card img{
 	border-radius: 15px;
 }
+
+.os-icon{
+	background: #EEEEEE;
+	padding: 40px 0;
+	border-radius: 10px;
+	transition: 0.3s all;
+}
+
+.os-card:hover .os-icon{
+	background:  var(--blue);
+}
+
+.os-icon svg, .os-icon i{
+	height: 40px;
+	fill: var(--blue);
+	color: var(--blue);
+	transition: 0.3s all;
+}
+
+.os-card:hover .os-icon svg,  .os-card:hover .os-icon i{
+	fill:  #eeeeee;
+	color:  #eeeeee;
+}
 /*=====  End of our services  ======*/
 
 /*======================================

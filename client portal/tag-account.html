@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="EBL Securities Limited (EBLSL) is fully owned subsidiary of Eastern Bank Ltd. EBL Securities Ltd. obtained the license from Bangladesh Securities and Exchange Commission (BSEC) as Stock Broker & Stock Dealer and is fully engaged in securities trading for the investors. The company holds the TREC of Dhaka Stock Exchange Limited (TREC No. 026) and Chittagong Stock Exchange Limited (TREC No. 021). It provides brokerage services through both DSE and CSE. The company also holds the Depository Participant (DP) license.">
+	<!-- opengraph -->
+	<meta property="og:image" content="../images/thumbnail.jpg">
+	<title>Tag Account | EBL Securities Ltd.</title>
+	<link rel="icon" type="image/x-icon" href="../images/favicon.png">
+	<!-- fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+	<!-- css -->
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+	<link rel="stylesheet" href="css/jquery-ui.min.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/common-responsive.css">
+	<link rel="stylesheet" href="css/fund-deposit.css">
+	<link rel="stylesheet" href="css/fund-deposit-responsive.css">
+	<!-- scripts -->
+	<script src="../js/jquery-3.6.0.min.js"></script>
+	<script src="../js/jquery-ui.min.js"></script>
+</head>
+<body id="tagAcc">
+	<div class="body-overlay" style="min-height: 100vh;"></div>
+	<!--============================
+	=            header            =
+	=============================-->
+	<section class="header sticky-top" w3-include-html="../includes/portal header private.html">
+	</section>
+
+	<!--===========================
+	=            tag account            =
+	============================-->
+	<section class="container-fluid ptb30">
+		<div class="row">
+			<div class="col-lg-6 offset-lg-3 col-12">
+				<div class="fund-depo">
+					<h5>Tag Account</h5>
+					<hr class="mt-1 mb-3">
+					<div class="form-row">
+						<div class="form-group col-lg-12">
+							<label for="date">Investor Code</label>
+							<input type="text" class="form-control">
+						</div>
+						<div class="form-group col-lg-6">
+							<label for="date">BO ID</label>
+							<input type="text" class="form-control" id="boId" disabled placeholder="bo id" value="1234567891234567">
+						</div>
+						<div class="form-group col-lg-6">
+							<label for="date">Investor Name</label>
+							<input type="text" class="form-control" disabled placeholder="investor name">
+						</div>
+						<div class="form-group col-lg-6">
+							<label for="date">OTP Type</label>
+							<div class="input-group">
+							  <div class="input-group-prepend">
+							    <div class="input-group-text">
+							      <input type="radio" id="sms" for="sms" name="otptype">
+							      <label class="ml-2 mb-0" for="sms">SMS</label>
+							    </div>
+							  </div>
+							  <input type="text" id="otpPhone" class="form-control" disabled aria-label="Text input with radio button" value="01712345678">
+							</div>
+						</div>
+						<div class="form-group col-lg-6">
+							<label class="d-none d-lg-block">&nbsp;</label>
+							<div class="input-group">
+							  <div class="input-group-prepend">
+							    <div class="input-group-text">
+							      <input type="radio" id="email" for="email" name="otptype">
+							      <label class="ml-2 mb-0" for="email">Email</label>
+							    </div>
+							  </div>
+							  <input type="text" id="otpEmail" class="form-control" disabled aria-label="Text input with radio button" value="rthrthrtjtyr@gmail.com">
+							</div>
+						</div>
+						<div class="form-group col-lg-12 text-center">
+							<a href="submit-otp.html"><button class="btn btn-primary mt-3">Next</button></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</body>
+<!-- scripts -->
+<script src="../js/main.js"></script>
+<script>
+	includeHTML();
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js" crossorigin="anonymous"></script>
+<script src="../js/popper.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script type="text/javascript">
+	var BoId = document.getElementById("boId").value;
+	document.getElementById("boId").value = (BoId.replace(BoId.substring(4,12), "*******"));
+
+	var OtpPhone = document.getElementById("otpPhone").value;
+	document.getElementById("otpPhone").value = (OtpPhone.replace(OtpPhone.substring(3,9), "*******"));
+
+	var OtpEmail = document.getElementById("otpEmail").value;
+	document.getElementById("otpEmail").value = (OtpEmail.replace(OtpEmail.substring(3,9), "*******"));
+
+</script>
+</html>

@@ -78,9 +78,13 @@ hr{
 	margin: 0;
 }
 
+.form-control{
+	border-radius: 0;
+}
+
 .form-control:focus {
-    border-color: #a7ce71;
-    box-shadow: 0 0 0 0.2rem #a7ce717a;
+    border-color: var(--blue);
+    box-shadow: 0 0 0 0.2rem rgb(38, 41, 44 / 50%);
 }
 
 .pt15{
@@ -395,9 +399,9 @@ section:hover .sec-title::after{
 	background: #ffffff;
 	top: 0;
 	left: 0;
-	opacity: 0.5;
+	opacity: 0.7;
 }
-.quick-links li:hover{
+.quick-links li:hover, .parent:hover, .child:hover{
 	color: var(--blue);
 	text-decoration: underline;
 }
@@ -419,6 +423,15 @@ section:hover .sec-title::after{
 	border: 1px solid var(--blue);
 	border-radius: 15px;
 }
+
+.sitemap li ul{
+	list-style:none;
+}
+
+.child{
+	white-space: nowrap;
+}
+
 /*=====  End of footer  ======*/
 
 

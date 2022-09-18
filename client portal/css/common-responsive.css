@@ -33,6 +33,10 @@
 	.table-data:not(:first-child){
 		margin-top: 15px;
 	}
+	.bottom-nav .navbar-nav .nav-item:not(:last-child){
+		border-right: unset;
+		padding-right: unset;
+	}
 }
 
 @media (min-width: 992px){

@@ -1,0 +1,46 @@
+.rpBg{
+	background: url('../images/research-portal/rp-bg.svg');
+	background-size: cover;
+	background-position: center;
+}
+
+.rpBg>div{
+	background-color: rgb(238 238 238 / 90%);
+}
+
+.down-wrapper{
+	border: 1px solid var(--blue);
+	display: flex;
+	width: 100%;
+	padding: 7px 15px;
+	background: #F0F0F0;
+	color: var(--blue);
+	font-size: 18px;
+	justify-content: space-between;
+	align-items: center;
+	transition: 0.3s all;
+}
+
+.down-wrapper:hover, .down-wrapper:focus{
+	background: var(--blue);
+	color: #ffffff;
+}
+
+.down-wrapper:not(:last-child){
+	margin-bottom: 15px;
+}
+
+.down-wrapper .icon svg{
+	height: 32px;
+}
+
+.mid-title{
+	width: 100%;
+	color: var(--blue);
+	margin-top: 30px;
+	margin-bottom: 15px;
+}
+
+.mid-title hr{
+	border-bottom: 1px solid var(--blue);
+}
