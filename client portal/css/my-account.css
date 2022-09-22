@@ -1,0 +1,43 @@
+.bo-info{
+	background: #ffffff;
+	padding: 15px;
+	border: 1px solid lightgray;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: var(--blue);
+}
+
+.nav-pills .nav-link {
+    border-radius: 0;
+}
+
+.bo-info-tab-head{
+	border-bottom: 1px solid var(--blue);
+}
+
+.form-control{
+	     display: unset; 
+	     width: unset; 
+	     height: unset; 
+	    padding: 5px 10px;
+	     font-size: unset; 
+	    font-weight: 400;
+	    line-height: 1.5;
+	    color: #495057;
+	    background-color: #fff;
+	    background-clip: padding-box;
+	    border: 1px solid #ced4da;
+	    border-radius: 0;
+	    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.sec-title::after {
+    content: "";
+    border-bottom: unset;
+    width: unset;
+    display: unset;
+    margin: unset;
+    transition: unset;
+}

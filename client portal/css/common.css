@@ -273,6 +273,28 @@ section:hover .sec-title::after{
 	    font-weight: bold;
 	    color: #fff;
 }
+
+.circle-info{
+	height: 16px;
+	fill: var(--blue);
+	margin-right: 10px;
+}
+
+.investor-code-selection{
+	background: #ffffff;
+	padding: 15px;
+	border: 1px solid lightgray;
+}
+
+.investor-code-selection div{
+	display: flex;
+	align-items: center;
+}
+
+.investor-code-selection p{
+	color: var(--blue);
+}
+
 /*=====  End of universal css  ======*/
 
 /*============================================
@@ -298,6 +320,18 @@ section:hover .sec-title::after{
 	padding-right: 10px;
 }
 
+.my-account{
+	border: 1px solid var(--blue);
+	font-weight: bold;
+}
+
+.navbar-light .navbar-nav .my-account .nav-link{
+	color: var(--blue);
+}
+
+.navbar-light .navbar-nav .my-account .nav-link:hover{
+	color: #ffffff;
+} 
 /*=====  End of portal header  ======*/
 
 /*========================================

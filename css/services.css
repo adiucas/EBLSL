@@ -59,3 +59,16 @@
 .sevice-points li:last-child{
     margin-bottom: 0;
 }
+
+.rbs-icon{
+    background: #eeeeee;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+.rbs-icon img{
+    height: 160px;
+}

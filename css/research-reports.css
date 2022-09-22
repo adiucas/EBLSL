@@ -75,3 +75,36 @@
 .m-th{
 	color: var(--blue);
 }
+
+.owl-item{
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.report-wrapper{
+	width: 100%;
+	background: #ffffff;
+	border: 1px solid var(--blue);
+}
+
+.report-wrapper .thumb{
+	overflow: hidden;
+}
+
+.report-wrapper .text{
+	padding: 15px;
+}
+
+.report-wrapper .text .title{
+	color: var(--blue);
+}
+
+.owl-nav{
+	text-align: center;
+}
+
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev{
+	font-size: 32px;
+	margin: 15px 10px;
+	color: var(--blue);
+}
