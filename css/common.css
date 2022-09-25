@@ -276,7 +276,15 @@ section:hover .sec-title::after{
 	align-items: center;
 }
 
+::-moz-selection { /* Code for Firefox */
+  color: var(--blue);
+  background: var(--yellow);
+}
 
+::selection {
+  color: var(--blue);
+  background: var(--yellow);
+}
 /*=====  End of universal css  ======*/
 
 /*==============================
@@ -394,6 +402,45 @@ section:hover .sec-title::after{
 	position: relative;
 }
 
+.foo-logo{
+	height: 50px;
+}
+
+.footer .contact-info-wrapper .content{
+	position: relative;
+	border: 2px solid var(--blue);
+	padding: 15px 20px;
+	border-radius: 5px;
+	margin-left: 10px;
+	background: #fff;
+	margin-top: 15px;
+	width: 300px;
+}
+
+.footer .contact-info-wrapper .content:not(:last-child){
+	margin-bottom: 15px;
+}
+
+.footer .contact-info-wrapper .content .icon{
+	display: flex;
+	width: 35px;
+	height: 35px;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	border: 2px solid var(--blue);
+	border-radius: 50%;
+	top: 50%;
+	transform: translateY(-50%);
+	left: -17px;
+	background: #ffffff;
+	color: var(--blue);
+}
+
+.footer .contact-info-wrapper .content .info{
+	padding-left: 7px;
+}
+
 .foo-overlay{
 	position: absolute;
 	width: 100%;
@@ -430,8 +477,24 @@ section:hover .sec-title::after{
 	list-style:none;
 }
 
+.sitemap label{
+	cursor: pointer;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
 .child{
 	white-space: nowrap;
+}
+
+.fa-caret-down{
+	transition: 0.3s all;
+}
+
+.sitemap [aria-expanded="true"] .fa-caret-down{
+	transform: rotate(180deg);
+	transform-origin: center;
 }
 
 /*=====  End of footer  ======*/

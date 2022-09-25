@@ -1,18 +1,47 @@
 <div class="row">
 	<div class="foo-overlay"></div>
-	<div class="col-lg-3 mb-2 mb-lg-0">
+	<div class="col-lg-6 mb-2 mb-lg-0">
 	  	<div class="text-center text-lg-left">
 	  		<a href="index.html"><img src="images/logo.svg" class="foo-logo"></a>
 	  	</div>
+	  	<div class="contact-info-wrapper">
+	  		<div class="content">
+	  			<div class="icon">
+	  				<i class="fa-solid fa-phone"></i>
+	  			</div>
+	  			<div class="info">
+	  				+8802 9556539
+	  			</div>
+	  		</div>
+	  		<div class="content">
+	  			<div class="icon">
+	  				<i class="fa-solid fa-envelope"></i>
+	  			</div>
+	  			<div class="info">
+	  				info@eblsecurities.com
+	  			</div>
+	  		</div>
+	  		<div class="content">
+	  			<div class="icon">
+	  				<i class="fa-sharp fa-solid fa-location-dot"></i>
+	  			</div>
+	  			<div class="info">
+	  				Jiban Bima Bhaban (1st Floor) <br> 10 Dilkusha, Dhaka-1000
+	  			</div>
+	  		</div>
+	  	</div>
 	</div>
-	<div class="sitemap col-lg-2 offset-lg-3 mb-2 mb-lg-0 text-center text-lg-left">
-		<label class="quick-link-label">Sitemap</label>
+	<div class="sitemap col-lg-2 mb-2 mb-lg-0 text-center text-lg-left" id="siteMap">
+		<label class="quick-link-label" >Sitemap</label>
 	  	<ul class="list-unstyled">
 	  		<li class="parent"><a href="index.html">Home</a></li>
 	  		<li class="mt-3">
-	  			<label class="mb-0"><strong>About Us</strong></label>
+	  			<label class="mb-0"  data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+	  				<strong>About Us</strong>
+	  				<i class="fa-solid fa-caret-down"></i>
+	  			</label>
 	  			<hr>
-	  			<ul>
+	  			<ul id="collapseOne" class="collapse" data-parent="#siteMap">
 	  				<li class="child"><a href="company-profile.html">Company Profile</a></li>
 	  				<li class="child"><a href="vision-mission.html">Vision & Mission</a></li>
 	  				<li class="child"><a href="bod.html">Board Of Directors</a></li>
@@ -20,9 +49,9 @@
 	  			</ul>
 	  		</li>
 	  		<li class="mt-3">
-	  			<label class="mb-0"><strong>Services</strong></label>
+	  			<label class="mb-0" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"><strong>Services</strong><i class="fa-solid fa-caret-down"></i></label>
 	  			<hr>
-	  			<ul>
+	  			<ul id="collapseTwo" class="collapse" data-parent="#siteMap">
 	  				<li class="child"><a href="retail-brokerage-services.html">Retail Brokerage Service</a></li>
 	  				<li class="child"><a href="corpo-hni.html">Corporate & HNIs</a></li>
 	  				<li class="child"><a href="foreign-investment.html">Foreign Investment</a></li>
@@ -33,10 +62,9 @@
 	  			</ul>
 	  		</li>
 	  		<li class="mt-3">
-	  			<label class="mb-0"><strong>Research</strong></label>
+	  			<label class="mb-0" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"><strong>Research</strong><i class="fa-solid fa-caret-down"></i></label>
 	  			<hr>
-	  			<ul>
-	  				<li class="child"><a href="featured-research-reports.html">Featured Research Reports</a></li>
+	  			<ul id="collapseThree" class="collapse" data-parent="#siteMap">
 	  				<li class="child"><a href="research-reports.html">Research Reports</a></li>
 	  				<li class="child"><a href="research-team.html">Research Team</a></li>
 	  				<li class="child"><a href="research-login.html">Research Login</a></li>

@@ -1,0 +1,21 @@
+.rlBg{
+	background: url('../images/research-portal/rp-bg.svg');
+	background-size: cover;
+}
+
+.rlBg>div{
+	background-color: rgb(238 238 238 / 90%);
+}
+
+.coming-soon{
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.coming-soon h1{
+	text-transform: uppercase;
+	color: var(--blue);
+}

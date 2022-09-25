@@ -373,13 +373,4 @@ section:hover .sec-title::after{
 	border-right: 1px solid lightgray;
 }
 
-
-/*.table-data:nth-child(odd){
-	background: #B0CAFF;
-}
-
-.table-data:nth-child(even){
-	background: #A1B9E9;
-}*/
-
 /*=====  End of responsive table  ======*/

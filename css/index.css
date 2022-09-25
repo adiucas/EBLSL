@@ -462,6 +462,10 @@
 =            dse ticker            =
 ==================================*/
 
+.footer .row {
+    margin-bottom: 60px;
+}
+
 .dse-ticker{
 	bottom: 0;
 	position: fixed;
@@ -508,10 +512,6 @@
 
 .ticker-wrapper:not(:first-child){
 	margin-left: 20px;
-}
-
-.footer .row{
-	margin-bottom: 30px;
 }
 
 /*=====  End of dse ticker  ======*/
