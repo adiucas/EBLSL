@@ -285,6 +285,22 @@ section:hover .sec-title::after{
   color: var(--blue);
   background: var(--yellow);
 }
+
+.single-service-icon-wrapper{
+    background: #eeeeee;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    color: var(--blue);
+    fill: var(--blue);
+    padding: 15px;
+}
+
+.single-service-icon-wrapper svg{
+	height: 60px;
+}
 /*=====  End of universal css  ======*/
 
 /*==============================

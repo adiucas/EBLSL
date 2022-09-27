@@ -24,16 +24,13 @@
 	<script src="../js/main.js"></script>
 </head>
 <body>
-	<div class="body-overlay" style="height: 100vh;"></div>
+	<div class="body-overlay" style="min-height: 100vh;"></div>
 	<!--============================
 	=            header            =
 	=============================-->
 	<section class="header sticky-top" w3-include-html="../includes/portal header private.html">
 	</section>
 
-	<!--===========================
-	=            home            =
-	============================-->
 	<section class="container-fluid ptb30 pls">
 		<div class="d-flex justify-content-between flex-column flex-lg-row mb-3 align-items-center">
 			<h3 class="sec-title">My Accounts</h3>
@@ -41,17 +38,17 @@
 		</div>
 		<div class="table-header">
 			<div class="row">
-				<span class="col-2 pl-4">Investor Code</span>
+				<span class="col-2 pl-4 justify-content-center">Investor Code</span>
 				<span class="col-2">Investor Name</span>
-				<span class="col-2">BO ID</span>
-				<span class="col-2">Phone</span>
-				<span class="col-2">Email</span>
-				<span class="col-2">Action</span>
+				<span class="col-2 justify-content-center">BO ID</span>
+				<span class="col-2 justify-content-center">Phone</span>
+				<span class="col-2 justify-content-center">Email</span>
+				<span class="col-2 justify-content-center">Action</span>
 			</div>
 		</div>
 		<div class="table-data">
 			<div class="row">
-				<div class="col-lg-2 col-6 data pl-lg-4 pl-sm-3 pl-3">
+				<div class="col-lg-2 col-6 data pl-lg-4 pl-sm-3 pl-3 text-lg-center">
 					<span class="th">Investor Code</span>
 					<span class="td">demo value</span>
 				</div>
@@ -59,23 +56,88 @@
 					<span class="th">Investor Name</span>
 					<span class="td">demo value</span>
 				</div>
-				<div class="col-lg-2 col-6 data">
+				<div class="col-lg-2 col-6 data text-lg-center">
 					<span class="th">BO ID</span>
 					<span class="td">demo value</span>
 				</div>
-				<div class="col-lg-2 col-6 data">
+				<div class="col-lg-2 col-6 data text-lg-center">
 					<span class="th">Phone</span>
 					<span class="td">demo value</span>
 				</div>
-				<div class="col-lg-2 col-6 data">
+				<div class="col-lg-2 col-6 data text-lg-center">
 					<span class="th">Email</span>
 					<span class="td">demo value</span>
 				</div>
-				<div class="col-lg-2 col-6 data p-2">
+				<div class="col-lg-2 col-6 data text-lg-center p-2">
 					<span class="th">Action</span>
-					<span class="td"><button title="delete" class="btn btn-sm btn-primary"><i class="fa-solid fa-trash-can"></i></button></span>
+					<span class="td"><button title="delete" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#exampleModal" data-backdrop="static" data-keyboard="false"><span class="mr-2"><b>DELETE</b></span><i class="fa-solid fa-trash-can"></i></button></span>
 				</div>
 			</div>
+		</div>
+		<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog modal-dialog-centered" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalLabel">Confirm Delete</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		      	<div class="form-row" id="del1">
+		      		<div class="form-group col-lg-6">
+		      			<label>Investor Code</label>
+		      			<input type="text" disabled class="form-control w-100" placeholder="41545456">
+		      		</div>
+		      		<div class="form-group col-lg-6">
+		      			<label for="date">Investor Name</label>
+		      			<input type="text" class="form-control w-100" disabled placeholder="investor name">
+		      		</div>
+		      		<div class="form-group col-lg-6">
+		      			<label for="date">OTP Type</label>
+		      			<div class="input-group">
+		      			  <div class="input-group-prepend">
+		      			    <div class="input-group-text">
+		      			      <input type="radio" id="sms" for="sms" name="otptype">
+		      			      <label class="ml-2 mb-0" for="sms">SMS</label>
+		      			    </div>
+		      			  </div>
+		      			  <input type="text" id="otpPhone" class="form-control" disabled aria-label="Text input with radio button" value="01712345678">
+		      			</div>
+		      		</div>
+		      		<div class="form-group col-lg-6">
+		      			<label class="d-none d-lg-block">&nbsp;</label>
+		      			<div class="input-group">
+		      			  <div class="input-group-prepend">
+		      			    <div class="input-group-text">
+		      			      <input type="radio" id="email" for="email" name="otptype">
+		      			      <label class="ml-2 mb-0" for="email">Email</label>
+		      			    </div>
+		      			  </div>
+		      			  <input type="text" id="otpEmail" class="form-control" disabled aria-label="Text input with radio button" value="rthrthrtjtyr@gmail.com">
+		      			</div>
+		      		</div>
+		      		<div class="form-group col-lg-12 text-center">
+		      			<button class="btn btn-primary" onclick="deleteOtp()">NEXT</button>
+		      		</div>
+		      	</div>
+		      	<div class="form-row" id="del2">
+		      		<div class="form-group col-lg-12">
+		      			<label for="date">OTP Code</label>
+		      			<div class="d-flex">
+		      				<input type="text" class="form-control w-100">
+		      				<button id="resetBtn" title="Resend OTP" onclick="countdown(0,30)" class="btn btn-primary btn-reset-otp ml-2"><i class="fa-solid fa-rotate-left"></i></button>
+		      			</div>
+		      			<div id="otpTimer" class="alert alert-warning otp-timer mt-2">
+		      			</div>
+		      		</div>
+		      		<div class="form-group col-lg-12 text-center">
+		      			<button class="btn btn-primary">Submit</button>
+		      		</div>
+		      	</div>
+		      </div>
+		    </div>
+		  </div>
 		</div>
 	</section>
 </body>
@@ -87,4 +149,11 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js" crossorigin="anonymous"></script>
 <script src="../js/popper.min.js"></script>
 <script src="../js/bootstrap.min.js"></script>
+<script>
+	function deleteOtp(){
+		$("#del1").hide();
+		$("#del2").show();
+		countdown(0,30);
+	}
+</script>
 </html>

@@ -55,14 +55,7 @@
 	transform: rotate(90deg) translateX(50%);
 	transform-origin: top right;
 }
-#mainBanner .menu{
-	background: var(--blue);
-	color: #ffffff;
-	padding: 5px 10px;
-	border-right: 2px solid var(--green);
-	border-left: 2px solid var(--green);
-	font-size: 14px;
-}
+
 .menu i, .menu svg{
 	transform: rotate(270deg);
 }
@@ -137,7 +130,11 @@
 	padding: 5px 10px;
 	border-right: 2px solid var(--green);
 	border-left: 2px solid var(--green);
-	font-size: 14px;
+	font-size: 16px;
+}
+
+.floating-menu-right .menu{
+	padding: 5px 15.5px !important;
 }
 .menu i, .menu svg{
 	transform: rotate(270deg);
@@ -156,7 +153,6 @@
 	border: 2px solid transparent;
 	padding: 15px;
 	border-radius: 15px;
-	overflow: hidden;
 	transition: 0.3s all;
 }
 .lm-text{
@@ -172,6 +168,8 @@
 }
 .os-card:hover .lm-text{
 	background: var(--blue);
+	border-bottom-right-radius: 15px;
+	border-bottom-left-radius: 15px;
 }
 .os-card-learn-more p{
 	margin: 5px auto 0;
